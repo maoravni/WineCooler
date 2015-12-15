@@ -22,6 +22,9 @@ float g_setpoint;
 #define M_MIN_SETPOINT 10
 #define M_MAX_SETPOINT 20
 
+#define M_SLEEP_INTERVAL 5*60
+#define M_MAX_COOL_INTERVAL 20*60
+
 cystatus WriteSetpointToEeprom(float value)
 {
     char* valueArray = (void*)&value;
@@ -155,7 +158,7 @@ int main()
             case M_STATE_SLEEP:
             {
                 LCD_PrintString("Sleep");
-                if (secCounter >= 6)
+                if (secCounter >= M_SLEEP_INTERVAL)
                 {
                     monitorState = M_STATE_MONITOR;
                 }
@@ -167,13 +170,14 @@ int main()
                 if (temperature > (g_setpoint + 1))
                 {
                     monitorState = M_STATE_COOLING;
+                    secCounter = 0;
                 }
                 break;
             }
             case M_STATE_COOLING:
             {
                 LCD_PrintString("On");
-                if (temperature <= g_setpoint)
+                if (temperature <= g_setpoint || secCounter >= M_MAX_COOL_INTERVAL)
                 {
                     monitorState = M_STATE_SLEEP;
                     secCounter = 0;
