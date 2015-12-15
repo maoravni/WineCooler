@@ -14,8 +14,10 @@
 #include <stdlib.h>
 #include "rtd.h"
 #include "display.h"
+#include "SsrOut.h"
 
 int secCounter = 0;
+int msecCounter = 0;
 
 float g_setpoint;
 
@@ -25,6 +27,17 @@ float g_setpoint;
 //#define M_SLEEP_INTERVAL 5*60
 #define M_SLEEP_INTERVAL 3
 #define M_MAX_COOL_INTERVAL 20*60
+
+void TimerInterrupt_Interrupt_InterruptCallback()
+{
+    ++msecCounter;
+    if (msecCounter >= 1000)
+    {
+        ++secCounter;
+        msecCounter = 0;
+    }
+}
+
 
 cystatus WriteSetpointToEeprom(float value)
 {
@@ -120,10 +133,6 @@ void InitializeComponents(void)
 #define M_STATE_MONITOR 1
 #define M_STATE_COOLING 2
 
-void TimerInterrupt_Interrupt_InterruptCallback()
-{
-}
-
 int monitorState = M_STATE_SLEEP;
 
 int main()
@@ -139,7 +148,9 @@ int main()
 
     InitializeComponents();
     
-        float temperature = 0.0;
+    float temperature = 0.0;
+    
+    SsrOut_Write(0);
 
     for(;;)
     {
@@ -172,6 +183,7 @@ int main()
                 {
                     monitorState = M_STATE_COOLING;
                     secCounter = 0;
+                    SsrOut_Write(1);
                 }
                 break;
             }
@@ -182,6 +194,7 @@ int main()
                 {
                     monitorState = M_STATE_SLEEP;
                     secCounter = 0;
+                    SsrOut_Write(0);
                 }
                 break;
             }
