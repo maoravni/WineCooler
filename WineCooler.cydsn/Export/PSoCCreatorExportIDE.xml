@@ -135,6 +135,11 @@
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\core_cmInstr.h</File>
           <File BuildType="BUILD" Toolchain="ARM IAR Generic">.\Generated_Source\PSoC5\CyBootAsmIar.s</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\project.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\SsrOut_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\SsrOut.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\SsrOut.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\EEPROM_1.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\EEPROM_1.h</File>
         </Files>
       </Folder>
       <Folder BuildType="STRICT" Path="C:\projects\WineCooler\WineCooler.cydsn\Export\ARM_GCC_Generic">
