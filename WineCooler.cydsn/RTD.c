@@ -134,7 +134,7 @@ int32 MeasureCalibrationVoltage()
 	rtdCalResult = rtdCalResult - zeroCurrentOffset; 
 	
 	/* Filter signal */
-	filRtdCalResult = FilterSignal( rtdCalResult , REF_RES );
+	filRtdCalResult = FilterSignal( rtdCalResult , DCALI1 );
 		
 	return filRtdCalResult;
 }
@@ -193,7 +193,7 @@ int32 GetRTDResistance(int32 vCal)
 	rtdResult = rtdResult - zeroCurrentOffset;
 	
 	/* Filter the signal */
-	filRtdResult = FilterSignal( rtdResult , RTD );
+	filRtdResult = FilterSignal( rtdResult , DCALI1 );
 
 	/* Find RTD resistance */
 	rtdRes = ( (float) filRtdResult / vCal ) * CAL_REF_RESISTOR;

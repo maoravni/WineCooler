@@ -24,8 +24,7 @@ float g_setpoint;
 #define M_MIN_SETPOINT 10
 #define M_MAX_SETPOINT 20
 
-//#define M_SLEEP_INTERVAL 5*60
-#define M_SLEEP_INTERVAL 3
+#define M_SLEEP_INTERVAL 5*60
 #define M_MAX_COOL_INTERVAL 20*60
 
 void TimerInterrupt_Interrupt_InterruptCallback()
@@ -129,17 +128,21 @@ void InitializeComponents(void)
     }
 }
 
+#define M_FILTER_COEFF (1.0/100.0)
+
+float lowPassFilter(float newVal, float prevVal)
+{
+    return M_FILTER_COEFF * newVal + (1 - M_FILTER_COEFF) * prevVal;
+}
+
 #define M_STATE_SLEEP 0
 #define M_STATE_MONITOR 1
 #define M_STATE_COOLING 2
 
 int monitorState = M_STATE_SLEEP;
-
 int main()
 {
-    
     CyGlobalIntEnable; /* Enable global interrupts. */
-
     /* Place your initialization/startup code here (e.g. MyInst_Start()) */
 
 //	#if (!(CY_PSOC3))
@@ -155,11 +158,11 @@ int main()
     for(;;)
     {
         /* Place your application code here. */
-        temperature = MeasureRTDTemp();
+        temperature = lowPassFilter(MeasureRTDTemp(), temperature);
         DisplayTemp(temperature, 1, 0, 5);
         
         char test[5];
-        sprintf(test, "secs: %d", secCounter);
+        sprintf(test, "secs: %4d", secCounter);
         LCD_Position(0,0);
         LCD_PrintString(test);
 
@@ -179,7 +182,7 @@ int main()
             case M_STATE_MONITOR:
             {
                 LCD_PrintString("Off");
-                if (temperature > (g_setpoint + 1))
+                if (temperature > (g_setpoint + 0.4))
                 {
                     monitorState = M_STATE_COOLING;
                     secCounter = 0;
