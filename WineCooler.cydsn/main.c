@@ -37,9 +37,16 @@ void TimerInterrupt_Interrupt_InterruptCallback()
     }
 }
 
+void OneSecInterrupt_Interrupt_InterruptCallback()
+{
+    ++secCounter;
+}
 
 cystatus WriteSetpointToEeprom(float value)
 {
+#ifdef PSOC4
+    return 0;
+#else
     char* valueArray = (void*)&value;
     cystatus result;
     
@@ -55,10 +62,14 @@ cystatus WriteSetpointToEeprom(float value)
     EEPROM_1_WriteByte(valueArray[3], 3);
 
     return result;
+#endif
 }
 
 float ReadSetpointFromEeprom()
 {
+#ifdef PSOC4
+        return 16.0;
+#else
     char valueArray[4];
     float *result;
     
@@ -70,10 +81,13 @@ float ReadSetpointFromEeprom()
     result = (float*)valueArray;
     
     return *result;
+#endif
 }
 
 void InitializeComponents(void)
 {
+    Clock1kHz_Start();
+    
     /* Start LCD and set position and print start message */
     LCD_Start();
 //    LCD_Position(0, 0);
@@ -115,7 +129,12 @@ void InitializeComponents(void)
 //	LCD_ClearDisplay();
 //    LCD_Position(1, 0);
 
+#ifdef PSOC4
+    OneSecInterrupt_Start();
+    Timer_1_Start();
+#else
     TimerInterrupt_Start();
+#endif
     
     EEPROM_1_Start();
     
@@ -158,11 +177,9 @@ int main()
     for(;;)
     {
         /* Place your application code here. */
-        // טמפרטורה
         temperature = lowPassFilter(MeasureRTDTemp(), temperature);
         DisplayTemp(temperature, 1, 0, 5);
         
-        // תצוגה
         char test[5];
         sprintf(test, "secs: %5d", secCounter);
         LCD_Position(0,0);

@@ -313,6 +313,49 @@
 <VisibleNodeIds>
 <v>WineCooler-000</v>
 <v>WineCooler-000\WineCooler</v>
+<v>WineCooler-000\WineCooler\CortexM3</v>
+<v>WineCooler-000\WineCooler\CortexM3\ARM_GCC_493</v>
+<v>WineCooler-000\WineCooler\CortexM3\ARM_GCC_493\Debug</v>
+<v>WineCooler-000\WineCooler\CortexM3\ARM_GCC_493\Debug\Listing Files</v>
+<v>WineCooler-000\WineCooler\CortexM3\ARM_GCC_493\Debug\Listing Files\ADC.lst</v>
+<v>WineCooler-000\WineCooler\CortexM3\ARM_GCC_493\Debug\Listing Files\ADC_Ext_CP_Clk.lst</v>
+<v>WineCooler-000\WineCooler\CortexM3\ARM_GCC_493\Debug\Listing Files\ADC_INT.lst</v>
+<v>WineCooler-000\WineCooler\CortexM3\ARM_GCC_493\Debug\Listing Files\ADC_IRQ.lst</v>
+<v>WineCooler-000\WineCooler\CortexM3\ARM_GCC_493\Debug\Listing Files\ADC_PM.lst</v>
+<v>WineCooler-000\WineCooler\CortexM3\ARM_GCC_493\Debug\Listing Files\ADC_theACLK.lst</v>
+<v>WineCooler-000\WineCooler\CortexM3\ARM_GCC_493\Debug\Listing Files\ADCMux.lst</v>
+<v>WineCooler-000\WineCooler\CortexM3\ARM_GCC_493\Debug\Listing Files\Calib_3_4.lst</v>
+<v>WineCooler-000\WineCooler\CortexM3\ARM_GCC_493\Debug\Listing Files\Calib_4_4.lst</v>
+<v>WineCooler-000\WineCooler\CortexM3\ARM_GCC_493\Debug\Listing Files\Calib_4_5.lst</v>
+<v>WineCooler-000\WineCooler\CortexM3\ARM_GCC_493\Debug\Listing Files\calibration.lst</v>
+<v>WineCooler-000\WineCooler\CortexM3\ARM_GCC_493\Debug\Listing Files\Clock1kHz.lst</v>
+<v>WineCooler-000\WineCooler\CortexM3\ARM_GCC_493\Debug\Listing Files\Cm3Start.lst</v>
+<v>WineCooler-000\WineCooler\CortexM3\ARM_GCC_493\Debug\Listing Files\CurrentMux.lst</v>
+<v>WineCooler-000\WineCooler\CortexM3\ARM_GCC_493\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>WineCooler-000\WineCooler\CortexM3\ARM_GCC_493\Debug\Listing Files\CyDmac.lst</v>
+<v>WineCooler-000\WineCooler\CortexM3\ARM_GCC_493\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>WineCooler-000\WineCooler\CortexM3\ARM_GCC_493\Debug\Listing Files\CyFlash.lst</v>
+<v>WineCooler-000\WineCooler\CortexM3\ARM_GCC_493\Debug\Listing Files\CyLib.lst</v>
+<v>WineCooler-000\WineCooler\CortexM3\ARM_GCC_493\Debug\Listing Files\cymetadata.lst</v>
+<v>WineCooler-000\WineCooler\CortexM3\ARM_GCC_493\Debug\Listing Files\cyPm.lst</v>
+<v>WineCooler-000\WineCooler\CortexM3\ARM_GCC_493\Debug\Listing Files\CySpc.lst</v>
+<v>WineCooler-000\WineCooler\CortexM3\ARM_GCC_493\Debug\Listing Files\cyutils.lst</v>
+<v>WineCooler-000\WineCooler\CortexM3\ARM_GCC_493\Debug\Listing Files\display.lst</v>
+<v>WineCooler-000\WineCooler\CortexM3\ARM_GCC_493\Debug\Listing Files\EEPROM_1.lst</v>
+<v>WineCooler-000\WineCooler\CortexM3\ARM_GCC_493\Debug\Listing Files\filter.lst</v>
+<v>WineCooler-000\WineCooler\CortexM3\ARM_GCC_493\Debug\Listing Files\IDAC.lst</v>
+<v>WineCooler-000\WineCooler\CortexM3\ARM_GCC_493\Debug\Listing Files\IDAC_PM.lst</v>
+<v>WineCooler-000\WineCooler\CortexM3\ARM_GCC_493\Debug\Listing Files\LCD.lst</v>
+<v>WineCooler-000\WineCooler\CortexM3\ARM_GCC_493\Debug\Listing Files\LCD_LCDPort.lst</v>
+<v>WineCooler-000\WineCooler\CortexM3\ARM_GCC_493\Debug\Listing Files\LCD_PM.lst</v>
+<v>WineCooler-000\WineCooler\CortexM3\ARM_GCC_493\Debug\Listing Files\main.lst</v>
+<v>WineCooler-000\WineCooler\CortexM3\ARM_GCC_493\Debug\Listing Files\RTD.lst</v>
+<v>WineCooler-000\WineCooler\CortexM3\ARM_GCC_493\Debug\Listing Files\RTD_1.lst</v>
+<v>WineCooler-000\WineCooler\CortexM3\ARM_GCC_493\Debug\Listing Files\Rtd_3_1.lst</v>
+<v>WineCooler-000\WineCooler\CortexM3\ARM_GCC_493\Debug\Listing Files\Rtd_4_0.lst</v>
+<v>WineCooler-000\WineCooler\CortexM3\ARM_GCC_493\Debug\Listing Files\Rtd_4_1.lst</v>
+<v>WineCooler-000\WineCooler\CortexM3\ARM_GCC_493\Debug\Listing Files\SsrOut.lst</v>
+<v>WineCooler-000\WineCooler\CortexM3\ARM_GCC_493\Debug\Listing Files\TimerInterrupt.lst</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStates>
@@ -389,8 +432,6 @@
 <name v=".\filter.c" />
 <name v=".\RTD.c" />
 <name v=".\WineCooler.cydwr" />
-<name v="..\..\PSoC4\Design01.cydsn\TopDesign\TopDesign.cysch" />
-<name v="..\..\PSoC4\Design01.cydsn\Design01.cydwr" />
 </OpenDocs>
 <config v="Release" />
 <AutoUpdate v="true" />

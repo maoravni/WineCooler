@@ -14,9 +14,7 @@
     
     /*Define your macro callbacks here */
     /*For more information, refer to the Macro Callbacks topic in the PSoC Creator Help.*/
-    
-#define TimerInterrupt_INTERRUPT_INTERRUPT_CALLBACK
 #define OneSecInterrupt_INTERRUPT_INTERRUPT_CALLBACK
-    
+
 #endif /* CYAPICALLBACKS_H */   
 /* [] */

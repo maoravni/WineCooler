@@ -119,13 +119,19 @@ int32 MeasureCalibrationVoltage()
 	/* Select the right current Mux and ADC Mux Channels */
 	CurrentMux_FastSelect(CAL_IDAC_CHANNEL);
 	ADCMux_FastSelect(CAL_CHANNEL);
+    #ifndef PSOC4
 	ADC_SelectConfiguration(ADC_CFG1,1);
+    #endif
     
 	/* Read voltage across calibration resistor */
 	ADC_StartConvert();
 	ADC_IsEndConversion(ADC_WAIT_FOR_RESULT);
 	ADC_StopConvert();
+#ifdef PSOC4
+    rtdCalResult = ADC_GetResult16(0);
+#else
 	rtdCalResult = ADC_GetResult32();
+#endif
 	
 	/* Get the offset voltage */
 	zeroCurrentOffset = GetZeroCurrentOffset();
@@ -178,12 +184,18 @@ int32 GetRTDResistance(int32 vCal)
 	/* Select the right current Mux and ADC Mux Channels */
 	CurrentMux_FastSelect(RTD_IDAC_CHANNEL);
 	ADCMux_FastSelect(RTD_CHANNEL);
+    #ifndef PSOC4
 	ADC_SelectConfiguration(ADC_CFG1,1);
+    #endif
     
 	/* Read voltage across RTD */
 	ADC_StartConvert();
 	ADC_IsEndConversion(ADC_WAIT_FOR_RESULT);
+#ifdef PSOC4
+    rtdResult = ADC_GetResult16(0);
+#else
 	rtdResult = ADC_GetResult32();
+#endif
 	ADC_StopConvert();
 		
 	/* Read zero current voltage across RTD sensor resistor */

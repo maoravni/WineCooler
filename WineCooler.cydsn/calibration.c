@@ -120,7 +120,11 @@ int32 GetZeroCurrentOffset(void)
 
     ADC_StartConvert();
     ADC_IsEndConversion(ADC_WAIT_FOR_RESULT);
+#ifdef PSOC4
+    result = ADC_GetResult16(0);
+#else
     result = ADC_GetResult32();
+#endif
     ADC_StopConvert();
     
     return result;
