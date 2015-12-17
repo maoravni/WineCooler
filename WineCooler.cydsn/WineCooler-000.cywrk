@@ -8,6 +8,7 @@
 <files />
 <projects>
 <v>.\WineCooler.cyprj</v>
+<v>..\..\PSoC4\Design01.cydsn\Design01.cyprj</v>
 </projects>
 <workspace_id v="b6c63763-82c9-4ad9-b28e-ee3024760e2e" />
 <WriteAppVersionLastSavedWith v="3.3.0.410" />

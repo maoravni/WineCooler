@@ -24,8 +24,8 @@ float g_setpoint;
 #define M_MIN_SETPOINT 10
 #define M_MAX_SETPOINT 20
 
-#define M_SLEEP_INTERVAL 5*60
-#define M_MAX_COOL_INTERVAL 20*60
+#define M_SLEEP_INTERVAL 3*60
+#define M_MAX_COOL_INTERVAL 2*60
 
 void TimerInterrupt_Interrupt_InterruptCallback()
 {
@@ -182,7 +182,7 @@ int main()
             case M_STATE_MONITOR:
             {
                 LCD_PrintString("Off");
-                if (temperature > (g_setpoint + 0.4))
+                if (temperature > (g_setpoint + 1))
                 {
                     monitorState = M_STATE_COOLING;
                     secCounter = 0;
