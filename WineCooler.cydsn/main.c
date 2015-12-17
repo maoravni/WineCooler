@@ -158,11 +158,13 @@ int main()
     for(;;)
     {
         /* Place your application code here. */
+        // טמפרטורה
         temperature = lowPassFilter(MeasureRTDTemp(), temperature);
         DisplayTemp(temperature, 1, 0, 5);
         
+        // תצוגה
         char test[5];
-        sprintf(test, "secs: %4d", secCounter);
+        sprintf(test, "secs: %5d", secCounter);
         LCD_Position(0,0);
         LCD_PrintString(test);
 
@@ -170,6 +172,7 @@ int main()
 
         switch (monitorState)
         {
+            // מנוחה
             case M_STATE_SLEEP:
             {
                 LCD_PrintString("Sleep");
@@ -179,10 +182,11 @@ int main()
                 }
                 break;
             }
+            // בדיקה
             case M_STATE_MONITOR:
             {
                 LCD_PrintString("Off");
-                if (temperature > (g_setpoint + 1))
+                if (temperature > (g_setpoint))
                 {
                     monitorState = M_STATE_COOLING;
                     secCounter = 0;
@@ -190,10 +194,11 @@ int main()
                 }
                 break;
             }
+            // קירור
             case M_STATE_COOLING:
             {
                 LCD_PrintString("On");
-                if (temperature <= g_setpoint || secCounter >= M_MAX_COOL_INTERVAL)
+                if (/*temperature <= g_setpoint || */secCounter >= M_MAX_COOL_INTERVAL)
                 {
                     monitorState = M_STATE_SLEEP;
                     secCounter = 0;
