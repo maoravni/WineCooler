@@ -539,7 +539,7 @@ function getElementsByClass(rootNode, elemName, className)
 <tr> <td class="prop"> Project :</td>
 <td class="proptext"> WineCoolerPsocStick</td></tr>
 <tr> <td class="prop"> Build Time :</td>
-<td class="proptext"> 12/17/15 23:31:13</td></tr>
+<td class="proptext"> 12/18/15 18:38:14</td></tr>
 <tr> <td class="prop"> Device :</td>
 <td class="proptext"> CY8C5888LTI-LP097</td></tr>
 <tr> <td class="prop"> Temperature :</td>
@@ -621,6 +621,14 @@ Clock Summary Section</span>
  <td class = "text_info"> </td>
 </tr>
 <tr> 
+ <td class = "text_info">Clock1kHz(fixed-function)</td>
+ <td class = "text_info">Clock1kHz(fixed-function)</td>
+ <td class = "number">1.000&nbsp;kHz</td>
+ <td class = "number">1.000&nbsp;kHz</td>
+ <td class = "number"> N/A </td>
+ <td class = "text_info"> </td>
+</tr>
+<tr> 
  <td class = "text_info">Clock1kHz(routed)</td>
  <td class = "text_info">Clock1kHz(routed)</td>
  <td class = "number">1.000&nbsp;kHz</td>
@@ -694,6 +702,102 @@ Clock Summary Section</span>
 </tr>
 </tbody>
  </table> 
+</div>
+</div>
+<div class="sta_sec" >
+<div>
+<a href="#" style="text-decoration: none; color: inherit;">
+<span class="sec_head"><span style="font-family: monospace;">+</span>
+Clock To Output Section</span>
+</a>
+</div><div class="sta_secbody"><div class="sta_sec" >
+<div>
+<a href="#" style="text-decoration: none; color: inherit;">
+<span class="sec_head"><span style="font-family: monospace;">+</span>
+Clock1kHz(fixed-function)</span>
+</a>
+</div><div class="sta_secbody"><table class="sta_tscs">
+ <thead> 
+<tr> 
+<th>Source</th>
+<th>Destination</th>
+<th>Delay (ns)</th>
+</tr>
+</thead> 
+<tbody>
+<tr> 
+ <td class = "text_info">\PWM_1:PWMHW\/cmp</td>
+ <td class = "text_info">StatusLed(0)_PAD</td>
+ <td class = "number">25.561</td>
+</tr>
+<tr class="sta_path">
+<td class="sta_path"  colspan="3">
+<table class="sta_path">
+ <thead> 
+<tr> 
+<th>Type</th>
+<th>Location</th>
+<th>Fanout</th>
+<th>Instance/Net</th>
+<th>Source</th>
+<th>Dest</th>
+<th>Delay (ns)</th>
+</tr>
+</thead> 
+<tbody>
+<tr> 
+ <td class = "text_info">timercell</td>
+ <td class = "text_info">F(Timer,0)</td>
+ <td class = "number">1</td>
+ <td class = "text_info">\PWM_1:PWMHW\</td>
+ <td class = "text_info">\PWM_1:PWMHW\/clock</td>
+ <td class = "text_info">\PWM_1:PWMHW\/cmp</td>
+ <td class = "number">1.000</td>
+</tr>
+<tr> 
+ <td class = "text_info">Route</td>
+ <td class = "text_info"></td>
+ <td class = "number">1</td>
+ <td class = "text_info">Net_29</td>
+ <td class = "text_info">\PWM_1:PWMHW\/cmp</td>
+ <td class = "text_info">StatusLed(0)/pin_input</td>
+ <td class = "number">8.670</td>
+</tr>
+<tr> 
+ <td class = "text_info">iocell15</td>
+ <td class = "text_info">P2[1]</td>
+ <td class = "number">1</td>
+ <td class = "text_info">StatusLed(0)</td>
+ <td class = "text_info">StatusLed(0)/pin_input</td>
+ <td class = "text_info">StatusLed(0)/pad_out</td>
+ <td class = "number">15.891</td>
+</tr>
+<tr> 
+ <td class = "text_info">Route</td>
+ <td class = "text_info"></td>
+ <td class = "number">1</td>
+ <td class = "text_info">StatusLed(0)_PAD</td>
+ <td class = "text_info">StatusLed(0)/pad_out</td>
+ <td class = "text_info">StatusLed(0)_PAD</td>
+ <td class = "number">0.000</td>
+</tr>
+<tr> 
+ <td class = "text_info">Clock</td>
+ <td class = "text_info"> </td>
+ <td class = "text_info"></td>
+ <td class = "text_info"></td>
+ <td class = "text_info"></td>
+ <td class = "text_info">Clock path delay</td>
+ <td class = "number">0.000</td>
+</tr>
+</tbody>
+ </table> 
+</td>
+</tr>
+</tbody>
+ </table> 
+</div>
+</div>
 </div>
 </div>
 </body>

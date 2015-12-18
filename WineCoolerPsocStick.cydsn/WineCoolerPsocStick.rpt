@@ -1,13 +1,13 @@
-Loading plugins phase: Elapsed time ==> 0s.188ms
+Loading plugins phase: Elapsed time ==> 2s.134ms
 Initializing data phase: Elapsed time ==> 0s.000ms
 <CYPRESSTAG name="CyDsfit arguments...">
-cydsfit arguments: -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -p C:\projects\WineCooler\WineCoolerPsocStick.cydsn\WineCoolerPsocStick.cyprj -d CY8C5888LTI-LP097 -s C:\projects\WineCooler\WineCoolerPsocStick.cydsn\Generated_Source\PSoC5 -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE</CYPRESSTAG>
+cydsfit arguments: -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -p C:\Users\maor\Documents\GitHub\WineCooler\WineCoolerPsocStick.cydsn\WineCoolerPsocStick.cyprj -d CY8C5888LTI-LP097 -s C:\Users\maor\Documents\GitHub\WineCooler\WineCoolerPsocStick.cydsn\Generated_Source\PSoC5 -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE</CYPRESSTAG>
 <CYPRESSTAG name="Design elaboration results...">
 </CYPRESSTAG>
-Elaboration phase: Elapsed time ==> 0s.919ms
+Elaboration phase: Elapsed time ==> 8s.097ms
 <CYPRESSTAG name="HDL generation results...">
 </CYPRESSTAG>
-HDL generation phase: Elapsed time ==> 0s.036ms
+HDL generation phase: Elapsed time ==> 0s.184ms
 <CYPRESSTAG name="Synthesis results...">
 
      | | | | | | |
@@ -25,23 +25,23 @@ HDL generation phase: Elapsed time ==> 0s.036ms
 ======================================================================
 Compiling:  WineCoolerPsocStick.v
 Program  :   C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\bin/warp.exe
-Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\projects\WineCooler\WineCoolerPsocStick.cydsn\WineCoolerPsocStick.cyprj -dcpsoc3 WineCoolerPsocStick.v -verilog
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\maor\Documents\GitHub\WineCooler\WineCoolerPsocStick.cydsn\WineCoolerPsocStick.cyprj -dcpsoc3 WineCoolerPsocStick.v -verilog
 ======================================================================
 
 ======================================================================
 Compiling:  WineCoolerPsocStick.v
 Program  :   C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\bin/warp.exe
-Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\projects\WineCooler\WineCoolerPsocStick.cydsn\WineCoolerPsocStick.cyprj -dcpsoc3 WineCoolerPsocStick.v -verilog
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\maor\Documents\GitHub\WineCooler\WineCoolerPsocStick.cydsn\WineCoolerPsocStick.cyprj -dcpsoc3 WineCoolerPsocStick.v -verilog
 ======================================================================
 
 ======================================================================
 Compiling:  WineCoolerPsocStick.v
 Program  :   vlogfe
-Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\projects\WineCooler\WineCoolerPsocStick.cydsn\WineCoolerPsocStick.cyprj -dcpsoc3 -verilog WineCoolerPsocStick.v
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\maor\Documents\GitHub\WineCooler\WineCoolerPsocStick.cydsn\WineCoolerPsocStick.cyprj -dcpsoc3 -verilog WineCoolerPsocStick.v
 ======================================================================
 
 vlogfe V6.3 IR 41:  Verilog parser
-Thu Dec 17 23:31:07 2015
+Fri Dec 18 18:37:53 2015
 
 
 ======================================================================
@@ -51,7 +51,7 @@ Options  :    -yv2 -q10 WineCoolerPsocStick.v
 ======================================================================
 
 vpp V6.3 IR 41:  Verilog Pre-Processor
-Thu Dec 17 23:31:07 2015
+Fri Dec 18 18:37:53 2015
 
 Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\not_v1_0\not_v1_0.v'
 Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\ZeroTerminal\ZeroTerminal.v'
@@ -61,6 +61,8 @@ Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\wa
 Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\lib\common\cy_psoc3_inc.v'
 Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cy_analog_virtualmux_v1_0\cy_analog_virtualmux_v1_0.v'
 Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\or_v1_0\or_v1_0.v'
+Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\OneTerminal\OneTerminal.v'
+Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cy_constant_v1_0\cy_constant_v1_0.v'
 
 vpp:  No errors.
 
@@ -84,11 +86,11 @@ vlogfe:  No errors.
 ======================================================================
 Compiling:  WineCoolerPsocStick.v
 Program  :   tovif
-Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\projects\WineCooler\WineCoolerPsocStick.cydsn\WineCoolerPsocStick.cyprj -dcpsoc3 -verilog WineCoolerPsocStick.v
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\maor\Documents\GitHub\WineCooler\WineCoolerPsocStick.cydsn\WineCoolerPsocStick.cyprj -dcpsoc3 -verilog WineCoolerPsocStick.v
 ======================================================================
 
 tovif V6.3 IR 41:  High-level synthesis
-Thu Dec 17 23:31:07 2015
+Fri Dec 18 18:37:53 2015
 
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\lib\common\std.vhd'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\lib\common\cypress.vhd'.
@@ -99,9 +101,9 @@ Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\lib\c
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\lib\common\stdlogic\mod_cnst.vif'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\lib\common\stdlogic\mod_mthv.vif'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\lib\common\stdlogic\mod_genv.vif'.
-Linking 'C:\projects\WineCooler\WineCoolerPsocStick.cydsn\codegentemp\WineCoolerPsocStick.ctl'.
+Linking 'C:\Users\maor\Documents\GitHub\WineCooler\WineCoolerPsocStick.cydsn\codegentemp\WineCoolerPsocStick.ctl'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\not_v1_0\not_v1_0.v'.
-Linking 'C:\projects\WineCooler\WineCoolerPsocStick.cydsn\codegentemp\WineCoolerPsocStick.v'.
+Linking 'C:\Users\maor\Documents\GitHub\WineCooler\WineCoolerPsocStick.cydsn\codegentemp\WineCoolerPsocStick.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\ZeroTerminal\ZeroTerminal.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\AMux_v1_80\AMux_v1_80.v'.
@@ -109,6 +111,8 @@ Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\lib\c
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\lib\common\cy_psoc3_inc.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cy_analog_virtualmux_v1_0\cy_analog_virtualmux_v1_0.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\or_v1_0\or_v1_0.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\OneTerminal\OneTerminal.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cy_constant_v1_0\cy_constant_v1_0.v'.
 
 tovif:  No errors.
 
@@ -116,11 +120,11 @@ tovif:  No errors.
 ======================================================================
 Compiling:  WineCoolerPsocStick.v
 Program  :   topld
-Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\projects\WineCooler\WineCoolerPsocStick.cydsn\WineCoolerPsocStick.cyprj -dcpsoc3 -verilog WineCoolerPsocStick.v
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\maor\Documents\GitHub\WineCooler\WineCoolerPsocStick.cydsn\WineCoolerPsocStick.cyprj -dcpsoc3 -verilog WineCoolerPsocStick.v
 ======================================================================
 
 topld V6.3 IR 41:  Synthesis and optimization
-Thu Dec 17 23:31:08 2015
+Fri Dec 18 18:37:54 2015
 
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\lib\common\std.vhd'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\lib\common\cypress.vhd'.
@@ -131,9 +135,9 @@ Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\lib\c
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\lib\common\stdlogic\mod_cnst.vif'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\lib\common\stdlogic\mod_mthv.vif'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\lib\common\stdlogic\mod_genv.vif'.
-Linking 'C:\projects\WineCooler\WineCoolerPsocStick.cydsn\codegentemp\WineCoolerPsocStick.ctl'.
+Linking 'C:\Users\maor\Documents\GitHub\WineCooler\WineCoolerPsocStick.cydsn\codegentemp\WineCoolerPsocStick.ctl'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\not_v1_0\not_v1_0.v'.
-Linking 'C:\projects\WineCooler\WineCoolerPsocStick.cydsn\codegentemp\WineCoolerPsocStick.v'.
+Linking 'C:\Users\maor\Documents\GitHub\WineCooler\WineCoolerPsocStick.cydsn\codegentemp\WineCoolerPsocStick.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\ZeroTerminal\ZeroTerminal.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\AMux_v1_80\AMux_v1_80.v'.
@@ -141,6 +145,8 @@ Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\lib\c
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\lib\common\cy_psoc3_inc.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cy_analog_virtualmux_v1_0\cy_analog_virtualmux_v1_0.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\or_v1_0\or_v1_0.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\OneTerminal\OneTerminal.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cy_constant_v1_0\cy_constant_v1_0.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\lib\lcpsoc3\stdlogic\cpsoc3.vif'.
 
 ----------------------------------------------------------
@@ -150,9 +156,12 @@ Detecting unused logic.
 	\IDAC:Net_157\
 	\ADC:Net_268\
 	\ADC:Net_270\
+	Net_100
+	Net_97
+	\PWM_1:Net_114\
 
 
-Deleted 3 User equations/components.
+Deleted 6 User equations/components.
 Deleted 0 Synthesized equations/components.
 
 ------------------------------------------------------
@@ -178,6 +187,10 @@ Aliasing \LCD:tmpOE__LCDPort_net_2\ to tmpOE__Rtd_3_1_net_0
 Aliasing \LCD:tmpOE__LCDPort_net_1\ to tmpOE__Rtd_3_1_net_0
 Aliasing \LCD:tmpOE__LCDPort_net_0\ to tmpOE__Rtd_3_1_net_0
 Aliasing tmpOE__SsrOut_net_0 to tmpOE__Rtd_3_1_net_0
+Aliasing tmpOE__StatusLed_net_0 to tmpOE__Rtd_3_1_net_0
+Aliasing \PWM_1:Net_113\ to tmpOE__Rtd_3_1_net_0
+Aliasing Net_96 to zero
+Aliasing Net_102 to zero
 Removing Lhs of wire one[8] = tmpOE__Rtd_3_1_net_0[1]
 Removing Lhs of wire tmpOE__Calib_3_4_net_0[11] = tmpOE__Rtd_3_1_net_0[1]
 Removing Lhs of wire \IDAC:Net_125\[19] = zero[2]
@@ -202,9 +215,15 @@ Removing Lhs of wire \LCD:tmpOE__LCDPort_net_2\[120] = tmpOE__Rtd_3_1_net_0[1]
 Removing Lhs of wire \LCD:tmpOE__LCDPort_net_1\[121] = tmpOE__Rtd_3_1_net_0[1]
 Removing Lhs of wire \LCD:tmpOE__LCDPort_net_0\[122] = tmpOE__Rtd_3_1_net_0[1]
 Removing Lhs of wire tmpOE__SsrOut_net_0[143] = tmpOE__Rtd_3_1_net_0[1]
+Removing Lhs of wire tmpOE__StatusLed_net_0[150] = tmpOE__Rtd_3_1_net_0[1]
+Removing Rhs of wire Net_29[151] = \PWM_1:Net_57\[162]
+Removing Lhs of wire \PWM_1:Net_107\[158] = zero[2]
+Removing Lhs of wire \PWM_1:Net_113\[159] = tmpOE__Rtd_3_1_net_0[1]
+Removing Lhs of wire Net_96[160] = zero[2]
+Removing Lhs of wire Net_102[166] = zero[2]
 
 ------------------------------------------------------
-Aliased 0 equations, 24 wires.
+Aliased 0 equations, 30 wires.
 ------------------------------------------------------
 
 ----------------------------------------------------------
@@ -226,27 +245,27 @@ topld:  No errors.
 
 CYPRESS_DIR    : C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp
 Warp Program   : C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\bin/warp.exe
-Warp Arguments : -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\projects\WineCooler\WineCoolerPsocStick.cydsn\WineCoolerPsocStick.cyprj -dcpsoc3 WineCoolerPsocStick.v -verilog
+Warp Arguments : -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\maor\Documents\GitHub\WineCooler\WineCoolerPsocStick.cydsn\WineCoolerPsocStick.cyprj -dcpsoc3 WineCoolerPsocStick.v -verilog
 </CYPRESSTAG>
-Warp synthesis phase: Elapsed time ==> 0s.424ms
+Warp synthesis phase: Elapsed time ==> 1s.134ms
 <CYPRESSTAG name="Fitter results...">
 <CYPRESSTAG name="Fitter startup details...">
-cyp3fit: V3.3.0.410, Family: PSoC3, Started at: Thursday, 17 December 2015 23:31:08
-Options: -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\projects\WineCooler\WineCoolerPsocStick.cydsn\WineCoolerPsocStick.cyprj -d CY8C5888LTI-LP097 WineCoolerPsocStick.v -verilog
+cyp3fit: V3.3.0.410, Family: PSoC3, Started at: Friday, 18 December 2015 18:37:54
+Options: -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\maor\Documents\GitHub\WineCooler\WineCoolerPsocStick.cydsn\WineCoolerPsocStick.cyprj -d CY8C5888LTI-LP097 WineCoolerPsocStick.v -verilog
 </CYPRESSTAG>
 <CYPRESSTAG name="Design parsing">
-Design parsing phase: Elapsed time ==> 0s.012ms
+Design parsing phase: Elapsed time ==> 0s.037ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Tech mapping">
 <CYPRESSTAG name="Initial Mapping" icon="FILE_RPT_TECHM">
 <CYPRESSTAG name="Global Clock Selection" icon="FILE_RPT_TECHM">
     Digital Clock 0: Automatic-assigning  clock 'ADC_Ext_CP_Clk'. Fanout=1, Signal=\ADC:Net_93\
     Analog  Clock 0: Automatic-assigning  clock 'ADC_theACLK'. Fanout=1, Signal=\ADC:Net_488\
-    Digital Clock 1: Automatic-assigning  clock 'Clock1kHz'. Fanout=1, Signal=Net_69
+    Digital Clock 1: Automatic-assigning  clock 'Clock1kHz'. Fanout=2, Signal=Net_69
 </CYPRESSTAG>
 <CYPRESSTAG name="UDB Clock/Enable Remapping Results">
 </CYPRESSTAG>
-ADD: pft.M0040: information: The following 11 pin(s) will be assigned a location by the fitter: \LCD:LCDPort(0)\, \LCD:LCDPort(1)\, \LCD:LCDPort(2)\, \LCD:LCDPort(3)\, \LCD:LCDPort(4)\, \LCD:LCDPort(5)\, \LCD:LCDPort(6)\, Rtd_3_1(0), Rtd_4_0(0), Rtd_4_1(0), SsrOut(0)
+ADD: pft.M0040: information: The following 7 pin(s) will be assigned a location by the fitter: \LCD:LCDPort(0)\, \LCD:LCDPort(1)\, \LCD:LCDPort(2)\, \LCD:LCDPort(3)\, \LCD:LCDPort(4)\, \LCD:LCDPort(5)\, \LCD:LCDPort(6)\
 
 
 Removing unused cells resulting from optimization
@@ -303,6 +322,9 @@ Design Equations
             pa_out => Rtd_3_1(0)__PA ,
             analog_term => Net_1072 ,
             pad => Rtd_3_1(0)_PAD );
+        Properties:
+        {
+        }
 
     Pin : Name = Calib_3_4(0)
         Attributes:
@@ -380,6 +402,9 @@ Design Equations
             pa_out => Rtd_4_0(0)__PA ,
             analog_term => Net_53 ,
             pad => Rtd_4_0(0)_PAD );
+        Properties:
+        {
+        }
 
     Pin : Name = Rtd_4_1(0)
         Attributes:
@@ -417,6 +442,9 @@ Design Equations
             pa_out => Rtd_4_1(0)__PA ,
             analog_term => Net_50 ,
             pad => Rtd_4_1(0)_PAD );
+        Properties:
+        {
+        }
 
     Pin : Name = Calib_4_4(0)
         Attributes:
@@ -785,6 +813,49 @@ Design Equations
         PORT MAP (
             pa_out => SsrOut(0)__PA ,
             pad => SsrOut(0)_PAD );
+        Properties:
+        {
+        }
+
+    Pin : Name = StatusLed(0)
+        Attributes:
+            In Group/Port: True
+            In Sync Option: AUTO
+            Out Sync Option: NOSYNC
+            Interrupt generated: False
+            Interrupt mode: NONE
+            Drive mode: CMOS_OUT
+            VTrip: EITHER
+            Slew: FAST
+            Input Sync needed: False
+            Output Sync needed: False
+            SC shield enabled: False
+            POR State: ANY
+            LCD Mode: COMMON
+            Register Mode: RegComb
+            CaSense Mode: NEITHER
+            Treat as pin: True
+            Is OE Registered: False
+            Uses Analog: False
+            Can contain Digital: True
+            Is SIO: False
+            SIO Output Buf: NONREGULATED
+            SIO Input Buf: SINGLE_ENDED
+            SIO HiFreq: LOW
+            SIO Hyst: DISABLED
+            SIO Vtrip: MULTIPLIER_0_5
+            SIO Multiplier Index: 0
+            SIO RefSel: VCC_IO
+            Required Capabilitites: DIGITAL, ROUTABLE
+            Initial Value: 0
+            IO Voltage: 0
+        PORT MAP (
+            pa_out => StatusLed(0)__PA ,
+            input => Net_29 ,
+            pad => StatusLed(0)_PAD );
+        Properties:
+        {
+        }
     </CYPRESSTAG>
     <CYPRESSTAG name="Macrocell listing" icon="FILE_RPT_EQUATION">
 
@@ -800,7 +871,7 @@ Design Equations
         !(
             0
         );
-        Output = __ONE__ (fanout=1)
+        Output = __ONE__ (fanout=2)
     </CYPRESSTAG>
     <CYPRESSTAG name="Datapath listing">
     </CYPRESSTAG>
@@ -852,13 +923,13 @@ Analog Clocks                 :    1 :    3 :    4 : 25.00 %
 CapSense Buffers              :    0 :    2 :    2 :  0.00 %
 Digital Filter Block          :    0 :    1 :    1 :  0.00 %
 Interrupts                    :    2 :   30 :   32 :  6.25 %
-IO                            :   17 :   31 :   48 : 35.42 %
+IO                            :   18 :   30 :   48 : 37.50 %
 Segment LCD                   :    0 :    1 :    1 :  0.00 %
 CAN 2.0b                      :    0 :    1 :    1 :  0.00 %
 I2C                           :    0 :    1 :    1 :  0.00 %
 USB                           :    0 :    1 :    1 :  0.00 %
 DMA Channels                  :    0 :   24 :   24 :  0.00 %
-Timer                         :    0 :    4 :    4 :  0.00 %
+Timer                         :    1 :    3 :    4 : 25.00 %
 UDB                           :      :      :      :        
   Macrocells                  :    1 :  191 :  192 :  0.52 %
   Unique P-terms              :    0 :  384 :  384 :  0.00 %
@@ -875,38 +946,44 @@ Analog (SC/CT) Blocks         :    0 :    4 :    4 :  0.00 %
 DAC                           :      :      :      :        
   VIDAC                       :    1 :    3 :    4 : 25.00 %
 </CYPRESSTAG>
-Technology Mapping: Elapsed time ==> 0s.012ms
-Tech mapping phase: Elapsed time ==> 0s.128ms
+Technology Mapping: Elapsed time ==> 0s.037ms
+Tech mapping phase: Elapsed time ==> 0s.300ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Placement">
 Initial Analog Placement Results:
 IO_0@[IOP=(3)][IoId=(0)] : Calib_3_4(0) (fixed)
 IO_1@[IOP=(3)][IoId=(1)] : Calib_4_4(0) (fixed)
 IO_2@[IOP=(3)][IoId=(2)] : Calib_4_5(0) (fixed)
-IO_7@[IOP=(1)][IoId=(7)] : Rtd_3_1(0)
-IO_1@[IOP=(2)][IoId=(1)] : Rtd_4_0(0)
-IO_3@[IOP=(2)][IoId=(3)] : Rtd_4_1(0)
+IO_3@[IOP=(3)][IoId=(3)] : Rtd_3_1(0) (fixed)
+IO_4@[IOP=(3)][IoId=(4)] : Rtd_4_0(0) (fixed)
+IO_5@[IOP=(3)][IoId=(5)] : Rtd_4_1(0) (fixed)
+IO_4@[IOP=(1)][IoId=(4)] : SsrOut(0) (fixed)
+IO_1@[IOP=(2)][IoId=(1)] : StatusLed(0) (fixed)
 DSM[0]@[FFB(DSM,0)] : \ADC:DSM\
 VIDAC[3]@[FFB(VIDAC,3)] : \IDAC:viDAC8\
-Log: apr.M0058: The analog placement iterative improvement is 33% done. (App=cydsfit)
-Log: apr.M0058: The analog placement iterative improvement is 53% done. (App=cydsfit)
-Log: apr.M0058: The analog placement iterative improvement is 90% done. (App=cydsfit)
+Log: apr.M0058: The analog placement iterative improvement is 25% done. (App=cydsfit)
+Log: apr.M0058: The analog placement iterative improvement is 42% done. (App=cydsfit)
+Log: apr.M0058: The analog placement iterative improvement is 77% done. (App=cydsfit)
 Analog Placement Results:
 IO_0@[IOP=(3)][IoId=(0)] : Calib_3_4(0) (fixed)
 IO_1@[IOP=(3)][IoId=(1)] : Calib_4_4(0) (fixed)
 IO_2@[IOP=(3)][IoId=(2)] : Calib_4_5(0) (fixed)
-IO_4@[IOP=(3)][IoId=(4)] : Rtd_3_1(0)
-IO_1@[IOP=(0)][IoId=(1)] : Rtd_4_0(0)
-IO_3@[IOP=(3)][IoId=(3)] : Rtd_4_1(0)
+IO_3@[IOP=(3)][IoId=(3)] : Rtd_3_1(0) (fixed)
+IO_4@[IOP=(3)][IoId=(4)] : Rtd_4_0(0) (fixed)
+IO_5@[IOP=(3)][IoId=(5)] : Rtd_4_1(0) (fixed)
+IO_4@[IOP=(1)][IoId=(4)] : SsrOut(0) (fixed)
+IO_1@[IOP=(2)][IoId=(1)] : StatusLed(0) (fixed)
 DSM[0]@[FFB(DSM,0)] : \ADC:DSM\
-VIDAC[3]@[FFB(VIDAC,3)] : \IDAC:viDAC8\
+VIDAC[1]@[FFB(VIDAC,1)] : \IDAC:viDAC8\
 
-Analog Placement phase: Elapsed time ==> 2s.377ms
+Analog Placement phase: Elapsed time ==> 9s.531ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Routing">
 Net "AmuxEye::ADCMux_CYAMUXSIDE_A" overuses wire "dsm0+ Wire"
 Net "AmuxEye::ADCMux_CYAMUXSIDE_B" overuses wire "dsm0+ Wire"
-Analog Routing phase: Elapsed time ==> 0s.013ms
+Net "AmuxEye::ADCMux_CYAMUXSIDE_B" overuses wire "GPIO P3[2] Mux__1b"
+Net "AmuxEye::ADCMux_CYAMUXSIDE_B" overuses wire "GPIO P3[2] Mux__0b"
+Analog Routing phase: Elapsed time ==> 0s.068ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Code Generation">
 ============ Analog Final Answer Routes ============
@@ -916,7 +993,7 @@ Map of net to items {
     dsm_0_vplus
   }
   Net: Net_53 {
-    p0_5
+    p3_4
   }
   Net: Net_51 {
     p3_1
@@ -925,16 +1002,16 @@ Map of net to items {
     dsm_0_vminus
   }
   Net: Net_50 {
-    p3_7
+    p3_5
   }
   Net: Net_52 {
     p3_2
   }
   Net: Net_5 {
-    vidac_3_iout
+    vidac_1_iout
   }
   Net: Net_1072 {
-    p15_0
+    p3_3
   }
   Net: Net_8 {
     p3_0
@@ -951,66 +1028,70 @@ Map of net to items {
   }
   Net: AmuxNet::ADCMux_CYAMUXSIDE_A {
     dsm_0_vplus
-    agl5_x_dsm_0_vplus
-    agl5
-    agl5_x_agr5
-    agr5
-    agr5_x_p3_1
-    agl5_x_p0_5
+    agl4_x_dsm_0_vplus
+    agl4
+    agl4_x_agr4
+    agr4
+    agr4_x_vidac_3_iout
+    vidac_3_iout
+    p3_1_x_vidac_3_iout
+    agr4_x_p3_4
     p3_1
-    p0_5
+    p3_4
   }
   Net: AmuxNet::ADCMux_CYAMUXSIDE_B {
     dsm_0_vminus
-    agl7_x_dsm_0_vminus
-    agl7
-    agl7_x_agr7
-    agr7
-    agr7_x_opamp_3_vminus
+    agl5_x_dsm_0_vminus
+    agl5
+    agl5_x_agr5
+    agr5
+    agr5_x_opamp_3_vminus
     opamp_3_vminus
     opamp_3_vminus_x_p3_2
-    agr7_x_p3_7
+    agr5_x_p3_5
     p3_2
-    p3_7
+    p3_5
   }
   Net: AmuxNet::CurrentMux {
-    vidac_3_iout
-    agr4_x_vidac_3_iout
-    agr4
-    agr4_x_p3_0
-    agr4_x_p15_0
+    vidac_1_iout
+    amuxbusr_x_vidac_1_iout
+    amuxbusr
+    amuxbusr_x_p3_3
+    p3_0_x_vidac_1_iout
+    p3_3
     p3_0
-    p15_0
   }
 }
 Map of item to net {
   dsm_0_vplus                                      -> Net_11
-  p0_5                                             -> Net_53
+  p3_4                                             -> Net_53
   p3_1                                             -> Net_51
   dsm_0_vminus                                     -> Net_12
-  p3_7                                             -> Net_50
+  p3_5                                             -> Net_50
   p3_2                                             -> Net_52
-  vidac_3_iout                                     -> Net_5
-  p15_0                                            -> Net_1072
+  vidac_1_iout                                     -> Net_5
+  p3_3                                             -> Net_1072
   p3_0                                             -> Net_8
-  agl5_x_dsm_0_vplus                               -> AmuxNet::ADCMux_CYAMUXSIDE_A
-  agl5                                             -> AmuxNet::ADCMux_CYAMUXSIDE_A
-  agl5_x_agr5                                      -> AmuxNet::ADCMux_CYAMUXSIDE_A
-  agr5                                             -> AmuxNet::ADCMux_CYAMUXSIDE_A
-  agr5_x_p3_1                                      -> AmuxNet::ADCMux_CYAMUXSIDE_A
-  agl5_x_p0_5                                      -> AmuxNet::ADCMux_CYAMUXSIDE_A
-  agl7_x_dsm_0_vminus                              -> AmuxNet::ADCMux_CYAMUXSIDE_B
-  agl7                                             -> AmuxNet::ADCMux_CYAMUXSIDE_B
-  agl7_x_agr7                                      -> AmuxNet::ADCMux_CYAMUXSIDE_B
-  agr7                                             -> AmuxNet::ADCMux_CYAMUXSIDE_B
-  agr7_x_opamp_3_vminus                            -> AmuxNet::ADCMux_CYAMUXSIDE_B
+  agl4_x_dsm_0_vplus                               -> AmuxNet::ADCMux_CYAMUXSIDE_A
+  agl4                                             -> AmuxNet::ADCMux_CYAMUXSIDE_A
+  agl4_x_agr4                                      -> AmuxNet::ADCMux_CYAMUXSIDE_A
+  agr4                                             -> AmuxNet::ADCMux_CYAMUXSIDE_A
+  agr4_x_vidac_3_iout                              -> AmuxNet::ADCMux_CYAMUXSIDE_A
+  vidac_3_iout                                     -> AmuxNet::ADCMux_CYAMUXSIDE_A
+  p3_1_x_vidac_3_iout                              -> AmuxNet::ADCMux_CYAMUXSIDE_A
+  agr4_x_p3_4                                      -> AmuxNet::ADCMux_CYAMUXSIDE_A
+  agl5_x_dsm_0_vminus                              -> AmuxNet::ADCMux_CYAMUXSIDE_B
+  agl5                                             -> AmuxNet::ADCMux_CYAMUXSIDE_B
+  agl5_x_agr5                                      -> AmuxNet::ADCMux_CYAMUXSIDE_B
+  agr5                                             -> AmuxNet::ADCMux_CYAMUXSIDE_B
+  agr5_x_opamp_3_vminus                            -> AmuxNet::ADCMux_CYAMUXSIDE_B
   opamp_3_vminus                                   -> AmuxNet::ADCMux_CYAMUXSIDE_B
   opamp_3_vminus_x_p3_2                            -> AmuxNet::ADCMux_CYAMUXSIDE_B
-  agr7_x_p3_7                                      -> AmuxNet::ADCMux_CYAMUXSIDE_B
-  agr4_x_vidac_3_iout                              -> AmuxNet::CurrentMux
-  agr4                                             -> AmuxNet::CurrentMux
-  agr4_x_p3_0                                      -> AmuxNet::CurrentMux
-  agr4_x_p15_0                                     -> AmuxNet::CurrentMux
+  agr5_x_p3_5                                      -> AmuxNet::ADCMux_CYAMUXSIDE_B
+  amuxbusr_x_vidac_1_iout                          -> AmuxNet::CurrentMux
+  amuxbusr                                         -> AmuxNet::CurrentMux
+  amuxbusr_x_p3_3                                  -> AmuxNet::CurrentMux
+  p3_0_x_vidac_1_iout                              -> AmuxNet::CurrentMux
 }
 Mux Info {
   Mux: ADCMux_CYAMUXSIDE_A {
@@ -1021,27 +1102,31 @@ Mux Info {
      IsAtMostOneSwitch: False
     Arm: 0 {
       Net:   Net_53
-      Outer: agl5_x_p0_5
+      Outer: agr4_x_p3_4
       Inner: __open__
       Path {
-        p0_5
-        agl5_x_p0_5
-        agl5
-        agl5_x_dsm_0_vplus
+        p3_4
+        agr4_x_p3_4
+        agr4
+        agl4_x_agr4
+        agl4
+        agl4_x_dsm_0_vplus
         dsm_0_vplus
       }
     }
     Arm: 1 {
       Net:   Net_51
-      Outer: agr5_x_p3_1
-      Inner: agl5_x_agr5
+      Outer: p3_1_x_vidac_3_iout
+      Inner: agr4_x_vidac_3_iout
       Path {
         p3_1
-        agr5_x_p3_1
-        agr5
-        agl5_x_agr5
-        agl5
-        agl5_x_dsm_0_vplus
+        p3_1_x_vidac_3_iout
+        vidac_3_iout
+        agr4_x_vidac_3_iout
+        agr4
+        agl4_x_agr4
+        agl4
+        agl4_x_dsm_0_vplus
         dsm_0_vplus
       }
     }
@@ -1054,31 +1139,31 @@ Mux Info {
      IsAtMostOneSwitch: False
     Arm: 0 {
       Net:   Net_50
-      Outer: agr7_x_p3_7
+      Outer: agr5_x_p3_5
       Inner: __open__
       Path {
-        p3_7
-        agr7_x_p3_7
-        agr7
-        agl7_x_agr7
-        agl7
-        agl7_x_dsm_0_vminus
+        p3_5
+        agr5_x_p3_5
+        agr5
+        agl5_x_agr5
+        agl5
+        agl5_x_dsm_0_vminus
         dsm_0_vminus
       }
     }
     Arm: 1 {
       Net:   Net_52
       Outer: opamp_3_vminus_x_p3_2
-      Inner: agr7_x_opamp_3_vminus
+      Inner: agr5_x_opamp_3_vminus
       Path {
         p3_2
         opamp_3_vminus_x_p3_2
         opamp_3_vminus
-        agr7_x_opamp_3_vminus
-        agr7
-        agl7_x_agr7
-        agl7
-        agl7_x_dsm_0_vminus
+        agr5_x_opamp_3_vminus
+        agr5
+        agl5_x_agr5
+        agl5
+        agl5_x_dsm_0_vminus
         dsm_0_vminus
       }
     }
@@ -1091,26 +1176,24 @@ Mux Info {
      IsAtMostOneSwitch: False
     Arm: 0 {
       Net:   Net_1072
-      Outer: agr4_x_p15_0
-      Inner: __open__
+      Outer: amuxbusr_x_p3_3
+      Inner: amuxbusr_x_vidac_1_iout
       Path {
-        p15_0
-        agr4_x_p15_0
-        agr4
-        agr4_x_vidac_3_iout
-        vidac_3_iout
+        p3_3
+        amuxbusr_x_p3_3
+        amuxbusr
+        amuxbusr_x_vidac_1_iout
+        vidac_1_iout
       }
     }
     Arm: 1 {
       Net:   Net_8
-      Outer: agr4_x_p3_0
+      Outer: p3_0_x_vidac_1_iout
       Inner: __open__
       Path {
         p3_0
-        agr4_x_p3_0
-        agr4
-        agr4_x_vidac_3_iout
-        vidac_3_iout
+        p3_0_x_vidac_1_iout
+        vidac_1_iout
       }
     }
   }
@@ -1119,12 +1202,12 @@ Dump of CyP35AnalogRoutingResultsDB
 IsVddaHalfUsedForComp = False
 IsVddaHalfUsedForSar0 = False
 IsVddaHalfUsedForSar1 = False
-Analog Code Generation phase: Elapsed time ==> 0s.304ms
+Analog Code Generation phase: Elapsed time ==> 1s.432ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Digital Placement">
 <CYPRESSTAG name="Detailed placement messages">
 I2659: No Constrained paths were found. The placer will run in non-timing driven mode.
-I2076: Total run-time: 0.4 sec.
+I2076: Total run-time: 1.4 sec.
 
 </CYPRESSTAG>
 <CYPRESSTAG name="PLD Packing">
@@ -1148,20 +1231,20 @@ PLD Packing Summary
 <CYPRESSTAG name="Packed PLD Contents">
 Packed PLD Contents not displayed at this verbose level.</CYPRESSTAG>
 </CYPRESSTAG>
-PLD Packing: Elapsed time ==> 0s.001ms
+PLD Packing: Elapsed time ==> 0s.000ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Partitioning">
 <CYPRESSTAG name="Initial Partitioning Summary">
 Initial Partitioning Summary not displayed at this verbose level.</CYPRESSTAG>
 <CYPRESSTAG name="Final Partitioning Summary">
 Final Partitioning Summary not displayed at this verbose level.</CYPRESSTAG>
-Partitioning: Elapsed time ==> 0s.014ms
+Partitioning: Elapsed time ==> 0s.069ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Simulated Annealing">
-Annealing: Elapsed time ==> 0s.001ms
+Annealing: Elapsed time ==> 0s.000ms
 <CYPRESSTAG name="Simulated Annealing Results">
 The seed used for moves was 114161200.
-Inital cost was 16, final cost is 16 (0.00% improvement).</CYPRESSTAG>
+Inital cost was 40, final cost is 40 (0.00% improvement).</CYPRESSTAG>
 </CYPRESSTAG>
 <CYPRESSTAG name="Final Placement Summary">
 
@@ -1207,7 +1290,7 @@ LAB@[UDB=(3,0)][LB=0] #macrocells=1, #inputs=0, #pterms=0
         !(
             0
         );
-        Output = __ONE__ (fanout=1)
+        Output = __ONE__ (fanout=2)
         Properties               : 
         {
         }
@@ -1241,89 +1324,6 @@ Intr container @ [IntrContainer=(0)]:
         }
 Drq container @ [DrqContainer=(0)]: empty
 Port 0 contains the following IO cells:
-[IoId=0]: 
-Pin : Name = SsrOut(0)
-    Attributes:
-        In Group/Port: True
-        In Sync Option: AUTO
-        Out Sync Option: NOSYNC
-        Interrupt generated: False
-        Interrupt mode: NONE
-        Drive mode: CMOS_OUT
-        VTrip: EITHER
-        Slew: FAST
-        Input Sync needed: False
-        Output Sync needed: False
-        SC shield enabled: False
-        POR State: ANY
-        LCD Mode: COMMON
-        Register Mode: RegComb
-        CaSense Mode: NEITHER
-        Treat as pin: True
-        Is OE Registered: False
-        Uses Analog: False
-        Can contain Digital: True
-        Is SIO: False
-        SIO Output Buf: NONREGULATED
-        SIO Input Buf: SINGLE_ENDED
-        SIO HiFreq: LOW
-        SIO Hyst: DISABLED
-        SIO Vtrip: MULTIPLIER_0_5
-        SIO Multiplier Index: 0
-        SIO RefSel: VCC_IO
-        Required Capabilitites: DIGITAL
-        Initial Value: 0
-        IO Voltage: 0
-    PORT MAP (
-        pa_out => SsrOut(0)__PA ,
-        pad => SsrOut(0)_PAD );
-    Properties:
-    {
-    }
-
-[IoId=5]: 
-Pin : Name = Rtd_4_0(0)
-    Attributes:
-        In Group/Port: True
-        In Sync Option: AUTO
-        Out Sync Option: AUTO
-        Interrupt generated: False
-        Interrupt mode: NONE
-        Drive mode: HI_Z_ANALOG
-        VTrip: EITHER
-        Slew: FAST
-        Input Sync needed: False
-        Output Sync needed: False
-        SC shield enabled: False
-        POR State: ANY
-        LCD Mode: COMMON
-        Register Mode: RegComb
-        CaSense Mode: NEITHER
-        Treat as pin: True
-        Is OE Registered: False
-        Uses Analog: True
-        Can contain Digital: False
-        Is SIO: False
-        SIO Output Buf: NONREGULATED
-        SIO Input Buf: SINGLE_ENDED
-        SIO HiFreq: LOW
-        SIO Hyst: DISABLED
-        SIO Vtrip: MULTIPLIER_0_5
-        SIO Multiplier Index: 0
-        SIO RefSel: VCC_IO
-        Required Capabilitites: ANALOG
-        Initial Value: 0
-        IO Voltage: 0
-    PORT MAP (
-        pa_out => Rtd_4_0(0)__PA ,
-        analog_term => Net_53 ,
-        pad => Rtd_4_0(0)_PAD );
-    Properties:
-    {
-    }
-
-Port 1 is empty
-Port 2 contains the following IO cells:
 [IoId=0]: 
 Pin : Name = \LCD:LCDPort(0)\
     Attributes:
@@ -1604,6 +1604,89 @@ Pin : Name = \LCD:LCDPort(6)\
     {
     }
 
+Port 1 contains the following IO cells:
+[IoId=4]: 
+Pin : Name = SsrOut(0)
+    Attributes:
+        In Group/Port: True
+        In Sync Option: AUTO
+        Out Sync Option: NOSYNC
+        Interrupt generated: False
+        Interrupt mode: NONE
+        Drive mode: CMOS_OUT
+        VTrip: EITHER
+        Slew: FAST
+        Input Sync needed: False
+        Output Sync needed: False
+        SC shield enabled: False
+        POR State: ANY
+        LCD Mode: COMMON
+        Register Mode: RegComb
+        CaSense Mode: NEITHER
+        Treat as pin: True
+        Is OE Registered: False
+        Uses Analog: False
+        Can contain Digital: True
+        Is SIO: False
+        SIO Output Buf: NONREGULATED
+        SIO Input Buf: SINGLE_ENDED
+        SIO HiFreq: LOW
+        SIO Hyst: DISABLED
+        SIO Vtrip: MULTIPLIER_0_5
+        SIO Multiplier Index: 0
+        SIO RefSel: VCC_IO
+        Required Capabilitites: DIGITAL
+        Initial Value: 0
+        IO Voltage: 0
+    PORT MAP (
+        pa_out => SsrOut(0)__PA ,
+        pad => SsrOut(0)_PAD );
+    Properties:
+    {
+    }
+
+Port 2 contains the following IO cells:
+[IoId=1]: 
+Pin : Name = StatusLed(0)
+    Attributes:
+        In Group/Port: True
+        In Sync Option: AUTO
+        Out Sync Option: NOSYNC
+        Interrupt generated: False
+        Interrupt mode: NONE
+        Drive mode: CMOS_OUT
+        VTrip: EITHER
+        Slew: FAST
+        Input Sync needed: False
+        Output Sync needed: False
+        SC shield enabled: False
+        POR State: ANY
+        LCD Mode: COMMON
+        Register Mode: RegComb
+        CaSense Mode: NEITHER
+        Treat as pin: True
+        Is OE Registered: False
+        Uses Analog: False
+        Can contain Digital: True
+        Is SIO: False
+        SIO Output Buf: NONREGULATED
+        SIO Input Buf: SINGLE_ENDED
+        SIO HiFreq: LOW
+        SIO Hyst: DISABLED
+        SIO Vtrip: MULTIPLIER_0_5
+        SIO Multiplier Index: 0
+        SIO RefSel: VCC_IO
+        Required Capabilitites: DIGITAL, ROUTABLE
+        Initial Value: 0
+        IO Voltage: 0
+    PORT MAP (
+        pa_out => StatusLed(0)__PA ,
+        input => Net_29 ,
+        pad => StatusLed(0)_PAD );
+    Properties:
+    {
+    }
+
 Port 3 contains the following IO cells:
 [IoId=0]: 
 Pin : Name = Calib_3_4(0)
@@ -1728,7 +1811,89 @@ Pin : Name = Calib_4_5(0)
     {
     }
 
-[IoId=7]: 
+[IoId=3]: 
+Pin : Name = Rtd_3_1(0)
+    Attributes:
+        In Group/Port: True
+        In Sync Option: AUTO
+        Out Sync Option: AUTO
+        Interrupt generated: False
+        Interrupt mode: NONE
+        Drive mode: HI_Z_ANALOG
+        VTrip: EITHER
+        Slew: FAST
+        Input Sync needed: False
+        Output Sync needed: False
+        SC shield enabled: False
+        POR State: ANY
+        LCD Mode: COMMON
+        Register Mode: RegComb
+        CaSense Mode: NEITHER
+        Treat as pin: True
+        Is OE Registered: False
+        Uses Analog: True
+        Can contain Digital: False
+        Is SIO: False
+        SIO Output Buf: NONREGULATED
+        SIO Input Buf: SINGLE_ENDED
+        SIO HiFreq: LOW
+        SIO Hyst: DISABLED
+        SIO Vtrip: MULTIPLIER_0_5
+        SIO Multiplier Index: 0
+        SIO RefSel: VCC_IO
+        Required Capabilitites: ANALOG
+        Initial Value: 0
+        IO Voltage: 0
+    PORT MAP (
+        pa_out => Rtd_3_1(0)__PA ,
+        analog_term => Net_1072 ,
+        pad => Rtd_3_1(0)_PAD );
+    Properties:
+    {
+    }
+
+[IoId=4]: 
+Pin : Name = Rtd_4_0(0)
+    Attributes:
+        In Group/Port: True
+        In Sync Option: AUTO
+        Out Sync Option: AUTO
+        Interrupt generated: False
+        Interrupt mode: NONE
+        Drive mode: HI_Z_ANALOG
+        VTrip: EITHER
+        Slew: FAST
+        Input Sync needed: False
+        Output Sync needed: False
+        SC shield enabled: False
+        POR State: ANY
+        LCD Mode: COMMON
+        Register Mode: RegComb
+        CaSense Mode: NEITHER
+        Treat as pin: True
+        Is OE Registered: False
+        Uses Analog: True
+        Can contain Digital: False
+        Is SIO: False
+        SIO Output Buf: NONREGULATED
+        SIO Input Buf: SINGLE_ENDED
+        SIO HiFreq: LOW
+        SIO Hyst: DISABLED
+        SIO Vtrip: MULTIPLIER_0_5
+        SIO Multiplier Index: 0
+        SIO RefSel: VCC_IO
+        Required Capabilitites: ANALOG
+        Initial Value: 0
+        IO Voltage: 0
+    PORT MAP (
+        pa_out => Rtd_4_0(0)__PA ,
+        analog_term => Net_53 ,
+        pad => Rtd_4_0(0)_PAD );
+    Properties:
+    {
+    }
+
+[IoId=5]: 
 Pin : Name = Rtd_4_1(0)
     Attributes:
         In Group/Port: True
@@ -1770,48 +1935,7 @@ Pin : Name = Rtd_4_1(0)
     }
 
 Port 12 is empty
-Port 15 contains the following IO cells:
-[IoId=0]: 
-Pin : Name = Rtd_3_1(0)
-    Attributes:
-        In Group/Port: True
-        In Sync Option: AUTO
-        Out Sync Option: AUTO
-        Interrupt generated: False
-        Interrupt mode: NONE
-        Drive mode: HI_Z_ANALOG
-        VTrip: EITHER
-        Slew: FAST
-        Input Sync needed: False
-        Output Sync needed: False
-        SC shield enabled: False
-        POR State: ANY
-        LCD Mode: COMMON
-        Register Mode: RegComb
-        CaSense Mode: NEITHER
-        Treat as pin: True
-        Is OE Registered: False
-        Uses Analog: True
-        Can contain Digital: False
-        Is SIO: False
-        SIO Output Buf: NONREGULATED
-        SIO Input Buf: SINGLE_ENDED
-        SIO HiFreq: LOW
-        SIO Hyst: DISABLED
-        SIO Vtrip: MULTIPLIER_0_5
-        SIO Multiplier Index: 0
-        SIO RefSel: VCC_IO
-        Required Capabilitites: ANALOG
-        Initial Value: 0
-        IO Voltage: 0
-    PORT MAP (
-        pa_out => Rtd_3_1(0)__PA ,
-        analog_term => Net_1072 ,
-        pad => Rtd_3_1(0)_PAD );
-    Properties:
-    {
-    }
-
+Port 15 is empty
 CAN 2.0b group 0: empty
 Cache group 0: empty
 CapSense group 0: empty
@@ -1897,10 +2021,22 @@ LVD group 0: empty
 PM group 0: empty
 Analog (SC/CT) Blocks group 0: empty
 SPC group 0: empty
-Timer group 0: empty
+Timer group 0: 
+    Timer Block @ F(Timer,0): 
+    timercell: Name =\PWM_1:PWMHW\
+        PORT MAP (
+            clock => Net_69 ,
+            enable => __ONE__ ,
+            tc => \PWM_1:Net_63\ ,
+            cmp => Net_29 ,
+            irq => \PWM_1:Net_54\ );
+        Properties:
+        {
+            cy_registers = ""
+        }
 USB group 0: empty
 VIDAC group 0: 
-    VIDAC Block @ F(VIDAC,3): 
+    VIDAC Block @ F(VIDAC,1): 
     vidaccell: Name =\IDAC:viDAC8\
         PORT MAP (
             vout => \IDAC:Net_124\ ,
@@ -1975,10 +2111,7 @@ Port Configuration report
      |     |       | Interrupt |                  |                  | 
 Port | Pin | Fixed |      Type |       Drive Mode |             Name | Connections
 -----+-----+-------+-----------+------------------+------------------+-----------------
-   0 |   0 |       |      NONE |         CMOS_OUT |        SsrOut(0) | 
-     |   5 |       |      NONE |      HI_Z_ANALOG |       Rtd_4_0(0) | Analog(Net_53)
------+-----+-------+-----------+------------------+------------------+-----------------
-   2 |   0 |       |      NONE |         CMOS_OUT | \LCD:LCDPort(0)\ | 
+   0 |   0 |       |      NONE |         CMOS_OUT | \LCD:LCDPort(0)\ | 
      |   1 |       |      NONE |         CMOS_OUT | \LCD:LCDPort(1)\ | 
      |   2 |       |      NONE |         CMOS_OUT | \LCD:LCDPort(2)\ | 
      |   3 |       |      NONE |         CMOS_OUT | \LCD:LCDPort(3)\ | 
@@ -1986,42 +2119,46 @@ Port | Pin | Fixed |      Type |       Drive Mode |             Name | Connectio
      |   5 |       |      NONE |         CMOS_OUT | \LCD:LCDPort(5)\ | 
      |   6 |       |      NONE |         CMOS_OUT | \LCD:LCDPort(6)\ | 
 -----+-----+-------+-----------+------------------+------------------+-----------------
+   1 |   4 |     * |      NONE |         CMOS_OUT |        SsrOut(0) | 
+-----+-----+-------+-----------+------------------+------------------+-----------------
+   2 |   1 |     * |      NONE |         CMOS_OUT |     StatusLed(0) | In(Net_29)
+-----+-----+-------+-----------+------------------+------------------+-----------------
    3 |   0 |     * |      NONE |      HI_Z_ANALOG |     Calib_3_4(0) | Analog(Net_8)
      |   1 |     * |      NONE |      HI_Z_ANALOG |     Calib_4_4(0) | Analog(Net_51)
      |   2 |     * |      NONE |      HI_Z_ANALOG |     Calib_4_5(0) | Analog(Net_52)
-     |   7 |       |      NONE |      HI_Z_ANALOG |       Rtd_4_1(0) | Analog(Net_50)
------+-----+-------+-----------+------------------+------------------+-----------------
-  15 |   0 |       |      NONE |      HI_Z_ANALOG |       Rtd_3_1(0) | Analog(Net_1072)
+     |   3 |     * |      NONE |      HI_Z_ANALOG |       Rtd_3_1(0) | Analog(Net_1072)
+     |   4 |     * |      NONE |      HI_Z_ANALOG |       Rtd_4_0(0) | Analog(Net_53)
+     |   5 |     * |      NONE |      HI_Z_ANALOG |       Rtd_4_1(0) | Analog(Net_50)
 ---------------------------------------------------------------------------------------
 </CYPRESSTAG>
 </CYPRESSTAG>
 </CYPRESSTAG>
-Digital component placer commit/Report: Elapsed time ==> 0s.001ms
-Digital Placement phase: Elapsed time ==> 0s.654ms
+Digital component placer commit/Report: Elapsed time ==> 0s.000ms
+Digital Placement phase: Elapsed time ==> 2s.187ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Digital Routing">
 Routing successful.
-Digital Routing phase: Elapsed time ==> 0s.981ms
+Digital Routing phase: Elapsed time ==> 3s.991ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Bitstream and API generation">
-Bitstream and API generation phase: Elapsed time ==> 0s.170ms
+Bitstream and API generation phase: Elapsed time ==> 0s.764ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Bitstream verification">
-Bitstream verification phase: Elapsed time ==> 0s.028ms
+Bitstream verification phase: Elapsed time ==> 0s.115ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Static timing analysis">
 Timing report is in WineCoolerPsocStick_timing.html.
-Static timing analysis phase: Elapsed time ==> 0s.168ms
+Static timing analysis phase: Elapsed time ==> 1s.155ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Data reporting">
 Data reporting phase: Elapsed time ==> 0s.000ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Database update...">
-Design database save phase: Elapsed time ==> 0s.128ms
+Design database save phase: Elapsed time ==> 0s.522ms
 </CYPRESSTAG>
-cydsfit: Elapsed time ==> 4s.973ms
+cydsfit: Elapsed time ==> 20s.171ms
 </CYPRESSTAG>
-Fitter phase: Elapsed time ==> 5s.013ms
-API generation phase: Elapsed time ==> 1s.158ms
-Dependency generation phase: Elapsed time ==> 0s.011ms
-Cleanup phase: Elapsed time ==> 0s.000ms
+Fitter phase: Elapsed time ==> 20s.287ms
+API generation phase: Elapsed time ==> 4s.242ms
+Dependency generation phase: Elapsed time ==> 0s.078ms
+Cleanup phase: Elapsed time ==> 0s.006ms

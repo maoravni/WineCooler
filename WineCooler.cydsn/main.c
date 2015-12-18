@@ -27,6 +27,9 @@ float g_setpoint;
 #define M_SLEEP_INTERVAL 3*60
 #define M_MAX_COOL_INTERVAL 2*60
 
+int PwmPeriodArray[] = {999, 200, 60000-1, 100, 999, 800, 99, 50};
+
+
 void TimerInterrupt_Interrupt_InterruptCallback()
 {
     ++msecCounter;
@@ -111,7 +114,11 @@ void InitializeComponents(void)
     ADC_Start();
     
     IDAC_Start();
-	
+
+#ifdef PSOCSTICK
+    PWM_1_Start();
+#endif
+
 //	isr_StateBckwrd_ClearPending();
 //	isr_StateFwd_ClearPending();
 //
@@ -157,6 +164,15 @@ float lowPassFilter(float newVal, float prevVal)
 #define M_STATE_SLEEP 0
 #define M_STATE_MONITOR 1
 #define M_STATE_COOLING 2
+#define M_STATE_ERROR 3
+
+void updatePwmPeriod(int monitorState)
+{
+#ifdef PSOCSTICK
+    PWM_1_WritePeriod(PwmPeriodArray[monitorState*2]);
+    PWM_1_WriteCompare(PwmPeriodArray[monitorState*2+1]);
+#endif
+}
 
 int monitorState = M_STATE_SLEEP;
 int main()
@@ -170,6 +186,8 @@ int main()
 
     InitializeComponents();
     
+    updatePwmPeriod(monitorState);
+    
     float temperature = 0.0;
     
     SsrOut_Write(0);
@@ -179,6 +197,12 @@ int main()
         /* Place your application code here. */
         temperature = lowPassFilter(MeasureRTDTemp(), temperature);
         DisplayTemp(temperature, 1, 0, 5);
+        
+        if (temperature < 0 || temperature > 30)
+        {
+            monitorState = M_STATE_ERROR;
+            updatePwmPeriod(monitorState);
+        }
         
         char test[5];
         sprintf(test, "secs: %5d", secCounter);
@@ -196,6 +220,7 @@ int main()
                 if (secCounter >= M_SLEEP_INTERVAL)
                 {
                     monitorState = M_STATE_MONITOR;
+                    updatePwmPeriod(monitorState);
                 }
                 break;
             }
@@ -206,20 +231,32 @@ int main()
                 if (temperature > (g_setpoint))
                 {
                     monitorState = M_STATE_COOLING;
+                    updatePwmPeriod(monitorState);
                     secCounter = 0;
                     SsrOut_Write(1);
                 }
                 break;
             }
-            // קירור
+            // קירורww
             case M_STATE_COOLING:
             {
                 LCD_PrintString("On");
                 if (/*temperature <= g_setpoint || */secCounter >= M_MAX_COOL_INTERVAL)
                 {
                     monitorState = M_STATE_SLEEP;
+                    updatePwmPeriod(monitorState);
                     secCounter = 0;
                     SsrOut_Write(0);
+                }
+                break;
+            }
+            case M_STATE_ERROR:
+            {
+                if (temperature > 0 && temperature < 30)
+                {
+                    monitorState = M_STATE_SLEEP;
+                    updatePwmPeriod(monitorState);
+                    secCounter = 0;
                 }
                 break;
             }
