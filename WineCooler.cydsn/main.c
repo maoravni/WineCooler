@@ -18,6 +18,7 @@
 
 int secCounter = 0;
 int msecCounter = 0;
+int sendDataLog = 0;
 
 float g_setpoint;
 
@@ -27,8 +28,7 @@ float g_setpoint;
 #define M_SLEEP_INTERVAL 3*60
 #define M_MAX_COOL_INTERVAL 2*60
 
-int PwmPeriodArray[] = {999, 200, 60000-1, 100, 999, 800, 99, 50};
-
+int PwmPeriodArray[] = {999, 200, 9999, 50, 999, 800, 99, 50};
 
 void TimerInterrupt_Interrupt_InterruptCallback()
 {
@@ -37,6 +37,7 @@ void TimerInterrupt_Interrupt_InterruptCallback()
     {
         ++secCounter;
         msecCounter = 0;
+        sendDataLog = 1;
     }
 }
 
@@ -117,6 +118,8 @@ void InitializeComponents(void)
 
 #ifdef PSOCSTICK
     PWM_1_Start();
+    /* Start USBFS Operation with 3V operation */
+    USBUART_1_Start(0u, USBUART_1_DWR_VDDD_OPERATION);
 #endif
 
 //	isr_StateBckwrd_ClearPending();
@@ -174,6 +177,40 @@ void updatePwmPeriod(int monitorState)
 #endif
 }
 
+#ifdef PSOCSTICK
+void checkUsbConfiguration()
+{
+    if(USBUART_1_IsConfigurationChanged() != 0u) /* Host could send double SET_INTERFACE request */
+    {
+        if(USBUART_1_GetConfiguration() != 0u)   /* Init IN endpoints when device configured */
+        {
+            /* Enumeration is done, enable OUT endpoint for receive data from Host */
+            USBUART_1_CDC_Init();
+        }
+    }         
+}
+
+void logData(int state, float temperature)
+{
+#define BUFFER_LEN  64u
+    char buffer[BUFFER_LEN];
+    int count;
+    
+        if(USBUART_1_GetConfiguration() != 0u)    /* Service USB CDC when device configured */
+        {
+            if(USBUART_1_DataIsReady() != 0u)               /* Check for input data from PC */
+            {   
+                count = USBUART_1_GetAll(buffer);           /* Read received data and re-enable OUT endpoint */
+                while(USBUART_1_CDCIsReady() == 0u);    /* Wait till component is ready to send more data to the PC */ 
+                
+                sprintf(buffer, "%d,%d.%d\n", state, (int)temperature, ((int)(temperature*10)%10));
+                USBUART_1_PutData(buffer, strlen(buffer));       /* Send data back to PC */
+            }  
+        }
+}
+
+#endif
+
 int monitorState = M_STATE_SLEEP;
 int main()
 {
@@ -203,7 +240,16 @@ int main()
             monitorState = M_STATE_ERROR;
             updatePwmPeriod(monitorState);
         }
-        
+
+        #ifdef PSOCSTICK
+        checkUsbConfiguration();
+        if (sendDataLog)
+        {
+            logData(monitorState, temperature);
+            sendDataLog = 0;
+        }
+        #endif
+
         char test[5];
         sprintf(test, "secs: %5d", secCounter);
         LCD_Position(0,0);

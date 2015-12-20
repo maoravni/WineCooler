@@ -1,13 +1,13 @@
-Loading plugins phase: Elapsed time ==> 2s.134ms
+Loading plugins phase: Elapsed time ==> 0s.188ms
 Initializing data phase: Elapsed time ==> 0s.000ms
 <CYPRESSTAG name="CyDsfit arguments...">
-cydsfit arguments: -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -p C:\Users\maor\Documents\GitHub\WineCooler\WineCoolerPsocStick.cydsn\WineCoolerPsocStick.cyprj -d CY8C5888LTI-LP097 -s C:\Users\maor\Documents\GitHub\WineCooler\WineCoolerPsocStick.cydsn\Generated_Source\PSoC5 -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE</CYPRESSTAG>
+cydsfit arguments: -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -p C:\projects\WineCooler\WineCoolerPsocStick.cydsn\WineCoolerPsocStick.cyprj -d CY8C5888LTI-LP097 -s C:\projects\WineCooler\WineCoolerPsocStick.cydsn\Generated_Source\PSoC5 -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE</CYPRESSTAG>
 <CYPRESSTAG name="Design elaboration results...">
 </CYPRESSTAG>
-Elaboration phase: Elapsed time ==> 8s.097ms
+Elaboration phase: Elapsed time ==> 1s.801ms
 <CYPRESSTAG name="HDL generation results...">
 </CYPRESSTAG>
-HDL generation phase: Elapsed time ==> 0s.184ms
+HDL generation phase: Elapsed time ==> 0s.049ms
 <CYPRESSTAG name="Synthesis results...">
 
      | | | | | | |
@@ -25,23 +25,23 @@ HDL generation phase: Elapsed time ==> 0s.184ms
 ======================================================================
 Compiling:  WineCoolerPsocStick.v
 Program  :   C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\bin/warp.exe
-Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\maor\Documents\GitHub\WineCooler\WineCoolerPsocStick.cydsn\WineCoolerPsocStick.cyprj -dcpsoc3 WineCoolerPsocStick.v -verilog
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\projects\WineCooler\WineCoolerPsocStick.cydsn\WineCoolerPsocStick.cyprj -dcpsoc3 WineCoolerPsocStick.v -verilog
 ======================================================================
 
 ======================================================================
 Compiling:  WineCoolerPsocStick.v
 Program  :   C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\bin/warp.exe
-Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\maor\Documents\GitHub\WineCooler\WineCoolerPsocStick.cydsn\WineCoolerPsocStick.cyprj -dcpsoc3 WineCoolerPsocStick.v -verilog
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\projects\WineCooler\WineCoolerPsocStick.cydsn\WineCoolerPsocStick.cyprj -dcpsoc3 WineCoolerPsocStick.v -verilog
 ======================================================================
 
 ======================================================================
 Compiling:  WineCoolerPsocStick.v
 Program  :   vlogfe
-Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\maor\Documents\GitHub\WineCooler\WineCoolerPsocStick.cydsn\WineCoolerPsocStick.cyprj -dcpsoc3 -verilog WineCoolerPsocStick.v
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\projects\WineCooler\WineCoolerPsocStick.cydsn\WineCoolerPsocStick.cyprj -dcpsoc3 -verilog WineCoolerPsocStick.v
 ======================================================================
 
 vlogfe V6.3 IR 41:  Verilog parser
-Fri Dec 18 18:37:53 2015
+Sat Dec 19 14:41:04 2015
 
 
 ======================================================================
@@ -51,7 +51,7 @@ Options  :    -yv2 -q10 WineCoolerPsocStick.v
 ======================================================================
 
 vpp V6.3 IR 41:  Verilog Pre-Processor
-Fri Dec 18 18:37:53 2015
+Sat Dec 19 14:41:04 2015
 
 Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\not_v1_0\not_v1_0.v'
 Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\ZeroTerminal\ZeroTerminal.v'
@@ -86,11 +86,11 @@ vlogfe:  No errors.
 ======================================================================
 Compiling:  WineCoolerPsocStick.v
 Program  :   tovif
-Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\maor\Documents\GitHub\WineCooler\WineCoolerPsocStick.cydsn\WineCoolerPsocStick.cyprj -dcpsoc3 -verilog WineCoolerPsocStick.v
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\projects\WineCooler\WineCoolerPsocStick.cydsn\WineCoolerPsocStick.cyprj -dcpsoc3 -verilog WineCoolerPsocStick.v
 ======================================================================
 
 tovif V6.3 IR 41:  High-level synthesis
-Fri Dec 18 18:37:53 2015
+Sat Dec 19 14:41:04 2015
 
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\lib\common\std.vhd'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\lib\common\cypress.vhd'.
@@ -101,9 +101,9 @@ Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\lib\c
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\lib\common\stdlogic\mod_cnst.vif'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\lib\common\stdlogic\mod_mthv.vif'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\lib\common\stdlogic\mod_genv.vif'.
-Linking 'C:\Users\maor\Documents\GitHub\WineCooler\WineCoolerPsocStick.cydsn\codegentemp\WineCoolerPsocStick.ctl'.
+Linking 'C:\projects\WineCooler\WineCoolerPsocStick.cydsn\codegentemp\WineCoolerPsocStick.ctl'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\not_v1_0\not_v1_0.v'.
-Linking 'C:\Users\maor\Documents\GitHub\WineCooler\WineCoolerPsocStick.cydsn\codegentemp\WineCoolerPsocStick.v'.
+Linking 'C:\projects\WineCooler\WineCoolerPsocStick.cydsn\codegentemp\WineCoolerPsocStick.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\ZeroTerminal\ZeroTerminal.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\AMux_v1_80\AMux_v1_80.v'.
@@ -120,11 +120,11 @@ tovif:  No errors.
 ======================================================================
 Compiling:  WineCoolerPsocStick.v
 Program  :   topld
-Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\maor\Documents\GitHub\WineCooler\WineCoolerPsocStick.cydsn\WineCoolerPsocStick.cyprj -dcpsoc3 -verilog WineCoolerPsocStick.v
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\projects\WineCooler\WineCoolerPsocStick.cydsn\WineCoolerPsocStick.cyprj -dcpsoc3 -verilog WineCoolerPsocStick.v
 ======================================================================
 
 topld V6.3 IR 41:  Synthesis and optimization
-Fri Dec 18 18:37:54 2015
+Sat Dec 19 14:41:04 2015
 
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\lib\common\std.vhd'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\lib\common\cypress.vhd'.
@@ -135,9 +135,9 @@ Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\lib\c
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\lib\common\stdlogic\mod_cnst.vif'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\lib\common\stdlogic\mod_mthv.vif'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\lib\common\stdlogic\mod_genv.vif'.
-Linking 'C:\Users\maor\Documents\GitHub\WineCooler\WineCoolerPsocStick.cydsn\codegentemp\WineCoolerPsocStick.ctl'.
+Linking 'C:\projects\WineCooler\WineCoolerPsocStick.cydsn\codegentemp\WineCoolerPsocStick.ctl'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\not_v1_0\not_v1_0.v'.
-Linking 'C:\Users\maor\Documents\GitHub\WineCooler\WineCoolerPsocStick.cydsn\codegentemp\WineCoolerPsocStick.v'.
+Linking 'C:\projects\WineCooler\WineCoolerPsocStick.cydsn\codegentemp\WineCoolerPsocStick.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\ZeroTerminal\ZeroTerminal.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\AMux_v1_80\AMux_v1_80.v'.
@@ -159,9 +159,25 @@ Detecting unused logic.
 	Net_100
 	Net_97
 	\PWM_1:Net_114\
+	\USBUART_1:dma_nrq_0\
+	\USBUART_1:Net_1800\
+	\USBUART_1:dma_nrq_3\
+	\USBUART_1:Net_1803\
+	\USBUART_1:Net_1801\
+	\USBUART_1:dma_nrq_1\
+	\USBUART_1:dma_nrq_4\
+	\USBUART_1:Net_1804\
+	\USBUART_1:dma_nrq_5\
+	\USBUART_1:Net_1805\
+	\USBUART_1:dma_nrq_6\
+	\USBUART_1:Net_1806\
+	\USBUART_1:dma_nrq_7\
+	\USBUART_1:Net_1807\
+	\USBUART_1:dma_nrq_2\
+	\USBUART_1:Net_1802\
 
 
-Deleted 6 User equations/components.
+Deleted 22 User equations/components.
 Deleted 0 Synthesized equations/components.
 
 ------------------------------------------------------
@@ -191,6 +207,8 @@ Aliasing tmpOE__StatusLed_net_0 to tmpOE__Rtd_3_1_net_0
 Aliasing \PWM_1:Net_113\ to tmpOE__Rtd_3_1_net_0
 Aliasing Net_96 to zero
 Aliasing Net_102 to zero
+Aliasing \USBUART_1:tmpOE__Dm_net_0\ to tmpOE__Rtd_3_1_net_0
+Aliasing \USBUART_1:tmpOE__Dp_net_0\ to tmpOE__Rtd_3_1_net_0
 Removing Lhs of wire one[8] = tmpOE__Rtd_3_1_net_0[1]
 Removing Lhs of wire tmpOE__Calib_3_4_net_0[11] = tmpOE__Rtd_3_1_net_0[1]
 Removing Lhs of wire \IDAC:Net_125\[19] = zero[2]
@@ -221,9 +239,11 @@ Removing Lhs of wire \PWM_1:Net_107\[158] = zero[2]
 Removing Lhs of wire \PWM_1:Net_113\[159] = tmpOE__Rtd_3_1_net_0[1]
 Removing Lhs of wire Net_96[160] = zero[2]
 Removing Lhs of wire Net_102[166] = zero[2]
+Removing Lhs of wire \USBUART_1:tmpOE__Dm_net_0\[199] = tmpOE__Rtd_3_1_net_0[1]
+Removing Lhs of wire \USBUART_1:tmpOE__Dp_net_0\[206] = tmpOE__Rtd_3_1_net_0[1]
 
 ------------------------------------------------------
-Aliased 0 equations, 30 wires.
+Aliased 0 equations, 32 wires.
 ------------------------------------------------------
 
 ----------------------------------------------------------
@@ -245,19 +265,20 @@ topld:  No errors.
 
 CYPRESS_DIR    : C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp
 Warp Program   : C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\bin/warp.exe
-Warp Arguments : -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\maor\Documents\GitHub\WineCooler\WineCoolerPsocStick.cydsn\WineCoolerPsocStick.cyprj -dcpsoc3 WineCoolerPsocStick.v -verilog
+Warp Arguments : -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\projects\WineCooler\WineCoolerPsocStick.cydsn\WineCoolerPsocStick.cyprj -dcpsoc3 WineCoolerPsocStick.v -verilog
 </CYPRESSTAG>
-Warp synthesis phase: Elapsed time ==> 1s.134ms
+Warp synthesis phase: Elapsed time ==> 0s.457ms
 <CYPRESSTAG name="Fitter results...">
 <CYPRESSTAG name="Fitter startup details...">
-cyp3fit: V3.3.0.410, Family: PSoC3, Started at: Friday, 18 December 2015 18:37:54
-Options: -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\maor\Documents\GitHub\WineCooler\WineCoolerPsocStick.cydsn\WineCoolerPsocStick.cyprj -d CY8C5888LTI-LP097 WineCoolerPsocStick.v -verilog
+cyp3fit: V3.3.0.410, Family: PSoC3, Started at: Saturday, 19 December 2015 14:41:05
+Options: -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\projects\WineCooler\WineCoolerPsocStick.cydsn\WineCoolerPsocStick.cyprj -d CY8C5888LTI-LP097 WineCoolerPsocStick.v -verilog
 </CYPRESSTAG>
 <CYPRESSTAG name="Design parsing">
-Design parsing phase: Elapsed time ==> 0s.037ms
+Design parsing phase: Elapsed time ==> 0s.008ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Tech mapping">
 <CYPRESSTAG name="Initial Mapping" icon="FILE_RPT_TECHM">
+Assigning clock USBUART_1_Clock_vbus to clock BUS_CLK because it is a pass-through
 <CYPRESSTAG name="Global Clock Selection" icon="FILE_RPT_TECHM">
     Digital Clock 0: Automatic-assigning  clock 'ADC_Ext_CP_Clk'. Fanout=1, Signal=\ADC:Net_93\
     Analog  Clock 0: Automatic-assigning  clock 'ADC_theACLK'. Fanout=1, Signal=\ADC:Net_488\
@@ -265,7 +286,7 @@ Design parsing phase: Elapsed time ==> 0s.037ms
 </CYPRESSTAG>
 <CYPRESSTAG name="UDB Clock/Enable Remapping Results">
 </CYPRESSTAG>
-ADD: pft.M0040: information: The following 7 pin(s) will be assigned a location by the fitter: \LCD:LCDPort(0)\, \LCD:LCDPort(1)\, \LCD:LCDPort(2)\, \LCD:LCDPort(3)\, \LCD:LCDPort(4)\, \LCD:LCDPort(5)\, \LCD:LCDPort(6)\
+ADD: pft.M0040: information: The following 8 pin(s) will be assigned a location by the fitter: \LCD:LCDPort(0)\, \LCD:LCDPort(1)\, \LCD:LCDPort(2)\, \LCD:LCDPort(3)\, \LCD:LCDPort(4)\, \LCD:LCDPort(5)\, \LCD:LCDPort(6)\, \USBUART_1:Dp(0)\
 
 
 Removing unused cells resulting from optimization
@@ -856,6 +877,83 @@ Design Equations
         Properties:
         {
         }
+
+    Pin : Name = \USBUART_1:Dm(0)\
+        Attributes:
+            In Group/Port: True
+            In Sync Option: AUTO
+            Out Sync Option: AUTO
+            Interrupt generated: False
+            Interrupt mode: NONE
+            Drive mode: HI_Z_ANALOG
+            VTrip: EITHER
+            Slew: FAST
+            Input Sync needed: False
+            Output Sync needed: False
+            SC shield enabled: False
+            POR State: ANY
+            LCD Mode: COMMON
+            Register Mode: RegComb
+            CaSense Mode: NEITHER
+            Treat as pin: True
+            Is OE Registered: False
+            Uses Analog: True
+            Can contain Digital: False
+            Is SIO: False
+            SIO Output Buf: NONREGULATED
+            SIO Input Buf: SINGLE_ENDED
+            SIO HiFreq: LOW
+            SIO Hyst: DISABLED
+            SIO Vtrip: MULTIPLIER_0_5
+            SIO Multiplier Index: 0
+            SIO RefSel: VCC_IO
+            Required Capabilitites: USB_D_MINUS
+            Initial Value: 0
+            IO Voltage: 0
+        PORT MAP (
+            pa_out => \USBUART_1:Dm(0)\__PA ,
+            analog_term => \USBUART_1:Net_597\ ,
+            pad => \USBUART_1:Dm(0)_PAD\ );
+        Properties:
+        {
+        }
+
+    Pin : Name = \USBUART_1:Dp(0)\
+        Attributes:
+            In Group/Port: True
+            In Sync Option: SYNC
+            Out Sync Option: AUTO
+            Interrupt generated: True
+            Interrupt mode: FALLING
+            Drive mode: HI_Z_ANALOG
+            VTrip: CMOS
+            Slew: FAST
+            Input Sync needed: True
+            Output Sync needed: False
+            SC shield enabled: False
+            POR State: ANY
+            LCD Mode: COMMON
+            Register Mode: RegComb
+            CaSense Mode: NEITHER
+            Treat as pin: False
+            Is OE Registered: False
+            Uses Analog: True
+            Can contain Digital: True
+            Is SIO: False
+            SIO Output Buf: NONREGULATED
+            SIO Input Buf: SINGLE_ENDED
+            SIO HiFreq: LOW
+            SIO Hyst: DISABLED
+            SIO Vtrip: MULTIPLIER_0_5
+            SIO Multiplier Index: 0
+            SIO RefSel: VCC_IO
+            Required Capabilitites: USB_D_PLUS
+            Initial Value: 0
+            IO Voltage: 0
+        PORT MAP (
+            pa_out => \USBUART_1:Dp(0)\__PA ,
+            analog_term => \USBUART_1:Net_1000\ ,
+            pad => \USBUART_1:Dp(0)_PAD\ );
     </CYPRESSTAG>
     <CYPRESSTAG name="Macrocell listing" icon="FILE_RPT_EQUATION">
 
@@ -908,6 +1006,78 @@ Design Equations
         {
             int_type = "10"
         }
+
+    interrupt: Name =\USBUART_1:ep_0\
+        PORT MAP (
+            interrupt => \USBUART_1:ept_int_0\ );
+        Properties:
+        {
+            int_type = "10"
+        }
+
+    interrupt: Name =\USBUART_1:bus_reset\
+        PORT MAP (
+            interrupt => \USBUART_1:Net_81\ );
+        Properties:
+        {
+            int_type = "10"
+        }
+
+    interrupt: Name =\USBUART_1:arb_int\
+        PORT MAP (
+            interrupt => \USBUART_1:Net_79\ );
+        Properties:
+        {
+            int_type = "10"
+        }
+
+    interrupt: Name =\USBUART_1:ep_2\
+        PORT MAP (
+            interrupt => \USBUART_1:ept_int_2\ );
+        Properties:
+        {
+            int_type = "10"
+        }
+
+    interrupt: Name =\USBUART_1:ep_1\
+        PORT MAP (
+            interrupt => \USBUART_1:ept_int_1\ );
+        Properties:
+        {
+            int_type = "10"
+        }
+
+    interrupt: Name =\USBUART_1:dp_int\
+        PORT MAP (
+            interrupt => \USBUART_1:Net_1010\ );
+        Properties:
+        {
+            int_type = "10"
+        }
+
+    interrupt: Name =\USBUART_1:ord_int\
+        PORT MAP (
+            interrupt => \USBUART_1:Net_95\ );
+        Properties:
+        {
+            int_type = "10"
+        }
+
+    interrupt: Name =\USBUART_1:ep_3\
+        PORT MAP (
+            interrupt => \USBUART_1:ept_int_3\ );
+        Properties:
+        {
+            int_type = "10"
+        }
+
+    interrupt: Name =\USBUART_1:sof_int\
+        PORT MAP (
+            interrupt => Net_108 );
+        Properties:
+        {
+            int_type = "10"
+        }
     </CYPRESSTAG>
 </CYPRESSTAG>
 <CYPRESSTAG name="Technology mapping summary" expanded>
@@ -922,12 +1092,12 @@ Digital Clocks                :    2 :    6 :    8 : 25.00 %
 Analog Clocks                 :    1 :    3 :    4 : 25.00 %
 CapSense Buffers              :    0 :    2 :    2 :  0.00 %
 Digital Filter Block          :    0 :    1 :    1 :  0.00 %
-Interrupts                    :    2 :   30 :   32 :  6.25 %
-IO                            :   18 :   30 :   48 : 37.50 %
+Interrupts                    :   11 :   21 :   32 : 34.38 %
+IO                            :   20 :   28 :   48 : 41.67 %
 Segment LCD                   :    0 :    1 :    1 :  0.00 %
 CAN 2.0b                      :    0 :    1 :    1 :  0.00 %
 I2C                           :    0 :    1 :    1 :  0.00 %
-USB                           :    0 :    1 :    1 :  0.00 %
+USB                           :    1 :    0 :    1 : 100.00 %
 DMA Channels                  :    0 :   24 :   24 :  0.00 %
 Timer                         :    1 :    3 :    4 : 25.00 %
 UDB                           :      :      :      :        
@@ -946,8 +1116,8 @@ Analog (SC/CT) Blocks         :    0 :    4 :    4 :  0.00 %
 DAC                           :      :      :      :        
   VIDAC                       :    1 :    3 :    4 : 25.00 %
 </CYPRESSTAG>
-Technology Mapping: Elapsed time ==> 0s.037ms
-Tech mapping phase: Elapsed time ==> 0s.300ms
+Technology Mapping: Elapsed time ==> 0s.008ms
+Tech mapping phase: Elapsed time ==> 0s.060ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Placement">
 Initial Analog Placement Results:
@@ -959,11 +1129,13 @@ IO_4@[IOP=(3)][IoId=(4)] : Rtd_4_0(0) (fixed)
 IO_5@[IOP=(3)][IoId=(5)] : Rtd_4_1(0) (fixed)
 IO_4@[IOP=(1)][IoId=(4)] : SsrOut(0) (fixed)
 IO_1@[IOP=(2)][IoId=(1)] : StatusLed(0) (fixed)
+IO_7@[IOP=(15)][IoId=(7)] : \USBUART_1:Dm(0)\ (fixed)
+IO_6@[IOP=(15)][IoId=(6)] : \USBUART_1:Dp(0)\ (fixed)
 DSM[0]@[FFB(DSM,0)] : \ADC:DSM\
-VIDAC[3]@[FFB(VIDAC,3)] : \IDAC:viDAC8\
-Log: apr.M0058: The analog placement iterative improvement is 25% done. (App=cydsfit)
-Log: apr.M0058: The analog placement iterative improvement is 42% done. (App=cydsfit)
-Log: apr.M0058: The analog placement iterative improvement is 77% done. (App=cydsfit)
+VIDAC[0]@[FFB(VIDAC,0)] : \IDAC:viDAC8\
+USB[0]@[FFB(USB,0)] : \USBUART_1:USB\
+Log: apr.M0058: The analog placement iterative improvement is 39% done. (App=cydsfit)
+Log: apr.M0058: The analog placement iterative improvement is 100% done. (App=cydsfit)
 Analog Placement Results:
 IO_0@[IOP=(3)][IoId=(0)] : Calib_3_4(0) (fixed)
 IO_1@[IOP=(3)][IoId=(1)] : Calib_4_4(0) (fixed)
@@ -973,17 +1145,20 @@ IO_4@[IOP=(3)][IoId=(4)] : Rtd_4_0(0) (fixed)
 IO_5@[IOP=(3)][IoId=(5)] : Rtd_4_1(0) (fixed)
 IO_4@[IOP=(1)][IoId=(4)] : SsrOut(0) (fixed)
 IO_1@[IOP=(2)][IoId=(1)] : StatusLed(0) (fixed)
+IO_7@[IOP=(15)][IoId=(7)] : \USBUART_1:Dm(0)\ (fixed)
+IO_6@[IOP=(15)][IoId=(6)] : \USBUART_1:Dp(0)\ (fixed)
 DSM[0]@[FFB(DSM,0)] : \ADC:DSM\
 VIDAC[1]@[FFB(VIDAC,1)] : \IDAC:viDAC8\
+USB[0]@[FFB(USB,0)] : \USBUART_1:USB\
 
-Analog Placement phase: Elapsed time ==> 9s.531ms
+Analog Placement phase: Elapsed time ==> 1s.379ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Routing">
 Net "AmuxEye::ADCMux_CYAMUXSIDE_A" overuses wire "dsm0+ Wire"
 Net "AmuxEye::ADCMux_CYAMUXSIDE_B" overuses wire "dsm0+ Wire"
 Net "AmuxEye::ADCMux_CYAMUXSIDE_B" overuses wire "GPIO P3[2] Mux__1b"
 Net "AmuxEye::ADCMux_CYAMUXSIDE_B" overuses wire "GPIO P3[2] Mux__0b"
-Analog Routing phase: Elapsed time ==> 0s.068ms
+Analog Routing phase: Elapsed time ==> 0s.016ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Code Generation">
 ============ Analog Final Answer Routes ============
@@ -1202,12 +1377,12 @@ Dump of CyP35AnalogRoutingResultsDB
 IsVddaHalfUsedForComp = False
 IsVddaHalfUsedForSar0 = False
 IsVddaHalfUsedForSar1 = False
-Analog Code Generation phase: Elapsed time ==> 1s.432ms
+Analog Code Generation phase: Elapsed time ==> 0s.300ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Digital Placement">
 <CYPRESSTAG name="Detailed placement messages">
 I2659: No Constrained paths were found. The placer will run in non-timing driven mode.
-I2076: Total run-time: 1.4 sec.
+I2076: Total run-time: 0.4 sec.
 
 </CYPRESSTAG>
 <CYPRESSTAG name="PLD Packing">
@@ -1231,20 +1406,20 @@ PLD Packing Summary
 <CYPRESSTAG name="Packed PLD Contents">
 Packed PLD Contents not displayed at this verbose level.</CYPRESSTAG>
 </CYPRESSTAG>
-PLD Packing: Elapsed time ==> 0s.000ms
+PLD Packing: Elapsed time ==> 0s.004ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Partitioning">
 <CYPRESSTAG name="Initial Partitioning Summary">
 Initial Partitioning Summary not displayed at this verbose level.</CYPRESSTAG>
 <CYPRESSTAG name="Final Partitioning Summary">
 Final Partitioning Summary not displayed at this verbose level.</CYPRESSTAG>
-Partitioning: Elapsed time ==> 0s.069ms
+Partitioning: Elapsed time ==> 0s.059ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Simulated Annealing">
 Annealing: Elapsed time ==> 0s.000ms
 <CYPRESSTAG name="Simulated Annealing Results">
 The seed used for moves was 114161200.
-Inital cost was 40, final cost is 40 (0.00% improvement).</CYPRESSTAG>
+Inital cost was 208, final cost is 208 (0.00% improvement).</CYPRESSTAG>
 </CYPRESSTAG>
 <CYPRESSTAG name="Final Placement Summary">
 
@@ -1310,6 +1485,78 @@ Intr container @ [IntrContainer=(0)]:
     interrupt: Name =TimerInterrupt
         PORT MAP (
             interrupt => Net_69_local );
+        Properties:
+        {
+            int_type = "10"
+        }
+  Intr@ [IntrContainer=(0)][IntrId=(1)] 
+    interrupt: Name =\USBUART_1:ep_1\
+        PORT MAP (
+            interrupt => \USBUART_1:ept_int_1\ );
+        Properties:
+        {
+            int_type = "10"
+        }
+  Intr@ [IntrContainer=(0)][IntrId=(2)] 
+    interrupt: Name =\USBUART_1:ep_2\
+        PORT MAP (
+            interrupt => \USBUART_1:ept_int_2\ );
+        Properties:
+        {
+            int_type = "10"
+        }
+  Intr@ [IntrContainer=(0)][IntrId=(3)] 
+    interrupt: Name =\USBUART_1:ep_3\
+        PORT MAP (
+            interrupt => \USBUART_1:ept_int_3\ );
+        Properties:
+        {
+            int_type = "10"
+        }
+  Intr@ [IntrContainer=(0)][IntrId=(12)] 
+    interrupt: Name =\USBUART_1:dp_int\
+        PORT MAP (
+            interrupt => \USBUART_1:Net_1010\ );
+        Properties:
+        {
+            int_type = "10"
+        }
+  Intr@ [IntrContainer=(0)][IntrId=(21)] 
+    interrupt: Name =\USBUART_1:sof_int\
+        PORT MAP (
+            interrupt => Net_108 );
+        Properties:
+        {
+            int_type = "10"
+        }
+  Intr@ [IntrContainer=(0)][IntrId=(22)] 
+    interrupt: Name =\USBUART_1:arb_int\
+        PORT MAP (
+            interrupt => \USBUART_1:Net_79\ );
+        Properties:
+        {
+            int_type = "10"
+        }
+  Intr@ [IntrContainer=(0)][IntrId=(23)] 
+    interrupt: Name =\USBUART_1:bus_reset\
+        PORT MAP (
+            interrupt => \USBUART_1:Net_81\ );
+        Properties:
+        {
+            int_type = "10"
+        }
+  Intr@ [IntrContainer=(0)][IntrId=(24)] 
+    interrupt: Name =\USBUART_1:ep_0\
+        PORT MAP (
+            interrupt => \USBUART_1:ept_int_0\ );
+        Properties:
+        {
+            int_type = "10"
+        }
+  Intr@ [IntrContainer=(0)][IntrId=(25)] 
+    interrupt: Name =\USBUART_1:ord_int\
+        PORT MAP (
+            interrupt => \USBUART_1:Net_95\ );
         Properties:
         {
             int_type = "10"
@@ -1935,7 +2182,156 @@ Pin : Name = Rtd_4_1(0)
     }
 
 Port 12 is empty
-Port 15 is empty
+Port 15 generates interrupt for logical port:
+    logicalport: Name =\USBUART_1:Dp\
+        PORT MAP (
+            in_clock_en => tmpOE__Rtd_3_1_net_0 ,
+            in_reset => zero ,
+            out_clock_en => tmpOE__Rtd_3_1_net_0 ,
+            out_reset => zero ,
+            interrupt => \USBUART_1:Net_1010\ ,
+            in_clock => ClockBlock_BUS_CLK );
+        Properties:
+        {
+            drive_mode = "000"
+            ibuf_enabled = "0"
+            id = "c39ef993-d787-4c0c-8ad6-c0c81f866442/618a72fc-5ddd-4df5-958f-a3d55102db42"
+            init_dr_st = "0"
+            input_buffer_sel = "00"
+            input_clk_en = 0
+            input_sync = "1"
+            input_sync_mode = "0"
+            intr_mode = "10"
+            invert_in_clock = 0
+            invert_in_clock_en = 0
+            invert_in_reset = 0
+            invert_out_clock = 0
+            invert_out_clock_en = 0
+            invert_out_reset = 0
+            io_voltage = ""
+            layout_mode = "CONTIGUOUS"
+            oe_conn = "0"
+            oe_reset = 0
+            oe_sync = "0"
+            output_clk_en = 0
+            output_clock_mode = "0"
+            output_conn = "0"
+            output_mode = "0"
+            output_reset = 0
+            output_sync = "0"
+            ovt_hyst_trim = "0"
+            ovt_needed = "0"
+            ovt_slew_control = "00"
+            pa_in_clock = -1
+            pa_in_clock_en = -1
+            pa_in_reset = -1
+            pa_out_clock = -1
+            pa_out_clock_en = -1
+            pa_out_reset = -1
+            pin_aliases = ""
+            pin_mode = "I"
+            por_state = 4
+            port_alias_group = ""
+            port_alias_required = 0
+            sio_group_cnt = 0
+            sio_hifreq = ""
+            sio_hyst = "1"
+            sio_ibuf = "00000000"
+            sio_info = "00"
+            sio_obuf = "00000000"
+            sio_refsel = "00000000"
+            sio_vohsel = ""
+            sio_vtrip = "00000000"
+            slew_rate = "0"
+            spanning = 0
+            sw_only = 0
+            use_annotation = "0"
+            vtrip = "00"
+            width = 1
+        }
+    and contains the following IO cells:
+[IoId=6]: 
+Pin : Name = \USBUART_1:Dp(0)\
+    Attributes:
+        In Group/Port: True
+        In Sync Option: SYNC
+        Out Sync Option: AUTO
+        Interrupt generated: True
+        Interrupt mode: FALLING
+        Drive mode: HI_Z_ANALOG
+        VTrip: CMOS
+        Slew: FAST
+        Input Sync needed: True
+        Output Sync needed: False
+        SC shield enabled: False
+        POR State: ANY
+        LCD Mode: COMMON
+        Register Mode: RegComb
+        CaSense Mode: NEITHER
+        Treat as pin: False
+        Is OE Registered: False
+        Uses Analog: True
+        Can contain Digital: True
+        Is SIO: False
+        SIO Output Buf: NONREGULATED
+        SIO Input Buf: SINGLE_ENDED
+        SIO HiFreq: LOW
+        SIO Hyst: DISABLED
+        SIO Vtrip: MULTIPLIER_0_5
+        SIO Multiplier Index: 0
+        SIO RefSel: VCC_IO
+        Required Capabilitites: USB_D_PLUS
+        Initial Value: 0
+        IO Voltage: 0
+    PORT MAP (
+        pa_out => \USBUART_1:Dp(0)\__PA ,
+        analog_term => \USBUART_1:Net_1000\ ,
+        pad => \USBUART_1:Dp(0)_PAD\ );
+    Properties:
+    {
+    }
+
+[IoId=7]: 
+Pin : Name = \USBUART_1:Dm(0)\
+    Attributes:
+        In Group/Port: True
+        In Sync Option: AUTO
+        Out Sync Option: AUTO
+        Interrupt generated: False
+        Interrupt mode: NONE
+        Drive mode: HI_Z_ANALOG
+        VTrip: EITHER
+        Slew: FAST
+        Input Sync needed: False
+        Output Sync needed: False
+        SC shield enabled: False
+        POR State: ANY
+        LCD Mode: COMMON
+        Register Mode: RegComb
+        CaSense Mode: NEITHER
+        Treat as pin: True
+        Is OE Registered: False
+        Uses Analog: True
+        Can contain Digital: False
+        Is SIO: False
+        SIO Output Buf: NONREGULATED
+        SIO Input Buf: SINGLE_ENDED
+        SIO HiFreq: LOW
+        SIO Hyst: DISABLED
+        SIO Vtrip: MULTIPLIER_0_5
+        SIO Multiplier Index: 0
+        SIO RefSel: VCC_IO
+        Required Capabilitites: USB_D_MINUS
+        Initial Value: 0
+        IO Voltage: 0
+    PORT MAP (
+        pa_out => \USBUART_1:Dm(0)\__PA ,
+        analog_term => \USBUART_1:Net_597\ ,
+        pad => \USBUART_1:Dm(0)_PAD\ );
+    Properties:
+    {
+    }
+
 CAN 2.0b group 0: empty
 Cache group 0: empty
 CapSense group 0: empty
@@ -2034,7 +2430,38 @@ Timer group 0:
         {
             cy_registers = ""
         }
-USB group 0: empty
+USB group 0: 
+    USB Block @ F(USB,0): 
+    usbcell: Name =\USBUART_1:USB\
+        PORT MAP (
+            dp => \USBUART_1:Net_1000\ ,
+            dm => \USBUART_1:Net_597\ ,
+            sof_int => Net_108 ,
+            arb_int => \USBUART_1:Net_79\ ,
+            usb_int => \USBUART_1:Net_81\ ,
+            ept_int_8 => \USBUART_1:ept_int_8\ ,
+            ept_int_7 => \USBUART_1:ept_int_7\ ,
+            ept_int_6 => \USBUART_1:ept_int_6\ ,
+            ept_int_5 => \USBUART_1:ept_int_5\ ,
+            ept_int_4 => \USBUART_1:ept_int_4\ ,
+            ept_int_3 => \USBUART_1:ept_int_3\ ,
+            ept_int_2 => \USBUART_1:ept_int_2\ ,
+            ept_int_1 => \USBUART_1:ept_int_1\ ,
+            ept_int_0 => \USBUART_1:ept_int_0\ ,
+            ord_int => \USBUART_1:Net_95\ ,
+            dma_req_7 => \USBUART_1:dma_req_7\ ,
+            dma_req_6 => \USBUART_1:dma_req_6\ ,
+            dma_req_5 => \USBUART_1:dma_req_5\ ,
+            dma_req_4 => \USBUART_1:dma_req_4\ ,
+            dma_req_3 => \USBUART_1:dma_req_3\ ,
+            dma_req_2 => \USBUART_1:dma_req_2\ ,
+            dma_req_1 => \USBUART_1:dma_req_1\ ,
+            dma_req_0 => \USBUART_1:dma_req_0\ ,
+            dma_termin => \USBUART_1:Net_824\ );
+        Properties:
+        {
+            cy_registers = ""
+        }
 VIDAC group 0: 
     VIDAC Block @ F(VIDAC,1): 
     vidaccell: Name =\IDAC:viDAC8\
@@ -2108,57 +2535,60 @@ Blocks not positioned by the digital component placer:
 ------------------------------------------------------------
 Port Configuration report
 ------------------------------------------------------------
-     |     |       | Interrupt |                  |                  | 
-Port | Pin | Fixed |      Type |       Drive Mode |             Name | Connections
------+-----+-------+-----------+------------------+------------------+-----------------
-   0 |   0 |       |      NONE |         CMOS_OUT | \LCD:LCDPort(0)\ | 
-     |   1 |       |      NONE |         CMOS_OUT | \LCD:LCDPort(1)\ | 
-     |   2 |       |      NONE |         CMOS_OUT | \LCD:LCDPort(2)\ | 
-     |   3 |       |      NONE |         CMOS_OUT | \LCD:LCDPort(3)\ | 
-     |   4 |       |      NONE |         CMOS_OUT | \LCD:LCDPort(4)\ | 
-     |   5 |       |      NONE |         CMOS_OUT | \LCD:LCDPort(5)\ | 
-     |   6 |       |      NONE |         CMOS_OUT | \LCD:LCDPort(6)\ | 
------+-----+-------+-----------+------------------+------------------+-----------------
-   1 |   4 |     * |      NONE |         CMOS_OUT |        SsrOut(0) | 
------+-----+-------+-----------+------------------+------------------+-----------------
-   2 |   1 |     * |      NONE |         CMOS_OUT |     StatusLed(0) | In(Net_29)
------+-----+-------+-----------+------------------+------------------+-----------------
-   3 |   0 |     * |      NONE |      HI_Z_ANALOG |     Calib_3_4(0) | Analog(Net_8)
-     |   1 |     * |      NONE |      HI_Z_ANALOG |     Calib_4_4(0) | Analog(Net_51)
-     |   2 |     * |      NONE |      HI_Z_ANALOG |     Calib_4_5(0) | Analog(Net_52)
-     |   3 |     * |      NONE |      HI_Z_ANALOG |       Rtd_3_1(0) | Analog(Net_1072)
-     |   4 |     * |      NONE |      HI_Z_ANALOG |       Rtd_4_0(0) | Analog(Net_53)
-     |   5 |     * |      NONE |      HI_Z_ANALOG |       Rtd_4_1(0) | Analog(Net_50)
----------------------------------------------------------------------------------------
+     |     |       | Interrupt |                  |                   | 
+Port | Pin | Fixed |      Type |       Drive Mode |              Name | Connections
+-----+-----+-------+-----------+------------------+-------------------+-----------------------------
+   0 |   0 |       |      NONE |         CMOS_OUT |  \LCD:LCDPort(0)\ | 
+     |   1 |       |      NONE |         CMOS_OUT |  \LCD:LCDPort(1)\ | 
+     |   2 |       |      NONE |         CMOS_OUT |  \LCD:LCDPort(2)\ | 
+     |   3 |       |      NONE |         CMOS_OUT |  \LCD:LCDPort(3)\ | 
+     |   4 |       |      NONE |         CMOS_OUT |  \LCD:LCDPort(4)\ | 
+     |   5 |       |      NONE |         CMOS_OUT |  \LCD:LCDPort(5)\ | 
+     |   6 |       |      NONE |         CMOS_OUT |  \LCD:LCDPort(6)\ | 
+-----+-----+-------+-----------+------------------+-------------------+-----------------------------
+   1 |   4 |     * |      NONE |         CMOS_OUT |         SsrOut(0) | 
+-----+-----+-------+-----------+------------------+-------------------+-----------------------------
+   2 |   1 |     * |      NONE |         CMOS_OUT |      StatusLed(0) | In(Net_29)
+-----+-----+-------+-----------+------------------+-------------------+-----------------------------
+   3 |   0 |     * |      NONE |      HI_Z_ANALOG |      Calib_3_4(0) | Analog(Net_8)
+     |   1 |     * |      NONE |      HI_Z_ANALOG |      Calib_4_4(0) | Analog(Net_51)
+     |   2 |     * |      NONE |      HI_Z_ANALOG |      Calib_4_5(0) | Analog(Net_52)
+     |   3 |     * |      NONE |      HI_Z_ANALOG |        Rtd_3_1(0) | Analog(Net_1072)
+     |   4 |     * |      NONE |      HI_Z_ANALOG |        Rtd_4_0(0) | Analog(Net_53)
+     |   5 |     * |      NONE |      HI_Z_ANALOG |        Rtd_4_1(0) | Analog(Net_50)
+-----+-----+-------+-----------+------------------+-------------------+-----------------------------
+  15 |   6 |       |   FALLING |      HI_Z_ANALOG | \USBUART_1:Dp(0)\ | Analog(\USBUART_1:Net_1000\)
+     |   7 |     * |      NONE |      HI_Z_ANALOG | \USBUART_1:Dm(0)\ | Analog(\USBUART_1:Net_597\)
+----------------------------------------------------------------------------------------------------
 </CYPRESSTAG>
 </CYPRESSTAG>
 </CYPRESSTAG>
-Digital component placer commit/Report: Elapsed time ==> 0s.000ms
-Digital Placement phase: Elapsed time ==> 2s.187ms
+Digital component placer commit/Report: Elapsed time ==> 0s.003ms
+Digital Placement phase: Elapsed time ==> 0s.768ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Digital Routing">
 Routing successful.
-Digital Routing phase: Elapsed time ==> 3s.991ms
+Digital Routing phase: Elapsed time ==> 1s.052ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Bitstream and API generation">
-Bitstream and API generation phase: Elapsed time ==> 0s.764ms
+Bitstream and API generation phase: Elapsed time ==> 0s.155ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Bitstream verification">
-Bitstream verification phase: Elapsed time ==> 0s.115ms
+Bitstream verification phase: Elapsed time ==> 0s.028ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Static timing analysis">
 Timing report is in WineCoolerPsocStick_timing.html.
-Static timing analysis phase: Elapsed time ==> 1s.155ms
+Static timing analysis phase: Elapsed time ==> 0s.247ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Data reporting">
 Data reporting phase: Elapsed time ==> 0s.000ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Database update...">
-Design database save phase: Elapsed time ==> 0s.522ms
+Design database save phase: Elapsed time ==> 0s.136ms
 </CYPRESSTAG>
-cydsfit: Elapsed time ==> 20s.171ms
+cydsfit: Elapsed time ==> 4s.168ms
 </CYPRESSTAG>
-Fitter phase: Elapsed time ==> 20s.287ms
-API generation phase: Elapsed time ==> 4s.242ms
-Dependency generation phase: Elapsed time ==> 0s.078ms
-Cleanup phase: Elapsed time ==> 0s.006ms
+Fitter phase: Elapsed time ==> 4s.200ms
+API generation phase: Elapsed time ==> 1s.160ms
+Dependency generation phase: Elapsed time ==> 0s.008ms
+Cleanup phase: Elapsed time ==> 0s.000ms
